@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Scrapy output and temporary files
+scrapy_project/data/BTC_history.csv
+scrapy_project/response.html
+*.log
+
+# macOS system files
+.DS_Store
+
+# Python package metadata
+*.egg-info/
+dist/
+build/
+
+# IDE-specific files (if you use any)
+.idea/  # PyCharm/IntelliJ
+.vscode/  # Visual Studio Code
+
+# Other temporary files
+*.swp
+*.swo
