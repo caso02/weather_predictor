@@ -4,7 +4,9 @@ import sqlite3
 import os
 from datetime import datetime
 import pickle
-from model.train_model import run_prediction  # Import the prediction function
+from train_model import run_prediction  # Import the prediction function
+from azure.storage.blob import BlobServiceClient, ContainerClient
+from pathlib import Path
 
 app = Flask(__name__)
 
@@ -14,8 +16,44 @@ WEATHER_CSV_PATH = os.path.join('scrapy_project', 'data', 'weather_history.csv')
 DATABASE_PATH = 'weather.db'
 # Path to the models directory
 MODELS_DIR = 'models'
+# Ensure the models directory exists
+os.makedirs(MODELS_DIR, exist_ok=True)
 # Path to the prediction results
 PREDICTION_PATH = os.path.join(MODELS_DIR, 'predictions.pkl')
+
+# Load models from Azure Blob Storage at startup
+print("*** Init and load models from Azure Blob Storage ***")
+if 'AZURE_STORAGE_CONNECTION_STRING' in os.environ:
+    azure_storage_connection_string = os.environ['AZURE_STORAGE_CONNECTION_STRING']
+    blob_service_client = BlobServiceClient.from_connection_string(azure_storage_connection_string)
+
+    print("Fetching blob containers...")
+    containers = blob_service_client.list_containers(include_metadata=True)
+    suffix = max(
+        int(container.name.split("-")[-1])
+        for container in containers
+        if container.name.startswith("weatherpredictor-model")
+    )
+    model_folder = f"weatherpredictor-model-{suffix}"
+    print(f"Using model container: {model_folder}")
+
+    container_client = blob_service_client.get_container_client(model_folder)
+    blob_list = container_client.list_blobs()
+
+    # Download the model files
+    model_files = [
+        "temp_model.pkl",
+        "weather_model.pkl",
+        "weather_label_encoder.pkl"
+    ]
+    for model_file in model_files:
+        download_file_path = os.path.join(MODELS_DIR, model_file)
+        print(f"Downloading blob to {download_file_path}")
+        with open(file=download_file_path, mode="wb") as download_file:
+            download_file.write(container_client.download_blob(model_file).readall())
+else:
+    print("CANNOT ACCESS AZURE BLOB STORAGE - Please set AZURE_STORAGE_CONNECTION_STRING. Current env:")
+    print(os.environ)
 
 def init_db():
     """Initialize the SQLite database and create the weather_history table."""
@@ -163,4 +201,4 @@ def predict():
         return f"Error during prediction: {str(e)}", 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=80)
