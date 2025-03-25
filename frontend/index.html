@@ -42,18 +42,35 @@
                 <h4 class="card-title mb-0">Weather Prediction</h4>
             </div>
             <div class="card-body prediction-container">
-                <!-- Button to trigger prediction -->
+                <!-- Form to select days ahead and trigger prediction -->
                 <form action="{{ url_for('predict', date=selected_date) }}" method="post" class="mb-3">
-                    <button type="submit" class="btn btn-primary">Predict Weather for Next Day</button>
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <label for="days-ahead" class="form-label">Predict for:</label>
+                        </div>
+                        <div class="col-auto">
+                            <select id="days-ahead" name="days_ahead" class="form-select">
+                                <option value="1">Next Day (March 21)</option>
+                                <option value="2">2 Days Ahead (March 22)</option>
+                                <option value="3">3 Days Ahead (March 23)</option>
+                                <option value="4">4 Days Ahead (March 24)</option>
+                                <option value="5">5 Days Ahead (March 25)</option>
+                                <option value="6">6 Days Ahead (March 26)</option>
+                                <option value="7">7 Days Ahead (March 27)</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Predict Weather</button>
+                        </div>
+                    </div>
                 </form>
 
                 <!-- Display prediction results if available -->
                 {% if prediction %}
-                <h5>Prediction for March 21, 2025</h5>
+                <h5>Prediction for {{ prediction.date }}</h5>
                 <p><strong>Average Temperature:</strong> {{ prediction.avg_temperature|round(1) }} °C</p>
-                <p><strong>Weather Condition:</strong> {{ prediction.weather_condition }}</p>
                 {% else %}
-                <p class="text-muted">Click the button above to predict the weather for March 21, 2025.</p>
+                <p class="text-muted">Select the number of days ahead and click the button to predict the weather.</p>
                 {% endif %}
             </div>
         </div>

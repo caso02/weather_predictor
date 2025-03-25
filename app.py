@@ -2,58 +2,23 @@ from flask import Flask, render_template, request, redirect, url_for
 import pandas as pd
 import sqlite3
 import os
+import subprocess
 from datetime import datetime
 import pickle
-from train_model import run_prediction  # Import the prediction function
-from azure.storage.blob import BlobServiceClient, ContainerClient
-from pathlib import Path
 
-app = Flask(__name__)
+# Initialize Flask app with the correct template folder
+app = Flask(__name__, template_folder='frontend')
 
 # Path to the weather_history.csv file
 WEATHER_CSV_PATH = os.path.join('scrapy_project', 'data', 'weather_history.csv')
 # Path to the SQLite database
-DATABASE_PATH = 'weather.db'
+DATABASE_PATH = 'weather.db'  # Relative path in the root directory
 # Path to the models directory
-MODELS_DIR = 'models'
+MODELS_DIR = 'model/models'  # Relative path to model/models/
 # Ensure the models directory exists
 os.makedirs(MODELS_DIR, exist_ok=True)
 # Path to the prediction results
 PREDICTION_PATH = os.path.join(MODELS_DIR, 'predictions.pkl')
-
-# Load models from Azure Blob Storage at startup
-print("*** Init and load models from Azure Blob Storage ***")
-if 'AZURE_STORAGE_CONNECTION_STRING' in os.environ:
-    azure_storage_connection_string = os.environ['AZURE_STORAGE_CONNECTION_STRING']
-    blob_service_client = BlobServiceClient.from_connection_string(azure_storage_connection_string)
-
-    print("Fetching blob containers...")
-    containers = blob_service_client.list_containers(include_metadata=True)
-    suffix = max(
-        int(container.name.split("-")[-1])
-        for container in containers
-        if container.name.startswith("weatherpredictor-model")
-    )
-    model_folder = f"weatherpredictor-model-{suffix}"
-    print(f"Using model container: {model_folder}")
-
-    container_client = blob_service_client.get_container_client(model_folder)
-    blob_list = container_client.list_blobs()
-
-    # Download the model files
-    model_files = [
-        "temp_model.pkl",
-        "weather_model.pkl",
-        "weather_label_encoder.pkl"
-    ]
-    for model_file in model_files:
-        download_file_path = os.path.join(MODELS_DIR, model_file)
-        print(f"Downloading blob to {download_file_path}")
-        with open(file=download_file_path, mode="wb") as download_file:
-            download_file.write(container_client.download_blob(model_file).readall())
-else:
-    print("CANNOT ACCESS AZURE BLOB STORAGE - Please set AZURE_STORAGE_CONNECTION_STRING. Current env:")
-    print(os.environ)
 
 def init_db():
     """Initialize the SQLite database and create the weather_history table."""
@@ -81,7 +46,7 @@ def init_db():
 def load_csv_to_db():
     """Read the CSV file, process the data, and load it into the SQLite database."""
     if not os.path.exists(WEATHER_CSV_PATH):
-        app.logger.error("weather_history.csv not found.")
+        app.logger.error(f"weather_history.csv not found at {os.path.abspath(WEATHER_CSV_PATH)}. Please run the Scrapy spider to generate the file.")
         return False
 
     try:
@@ -106,6 +71,14 @@ def load_csv_to_db():
     conn = sqlite3.connect(DATABASE_PATH)
     cursor = conn.cursor()
 
+    # Only delete the table contents if we're sure we can load new data
+    cursor.execute("SELECT COUNT(*) FROM weather_history")
+    count = cursor.fetchone()[0]
+    if count > 0:
+        app.logger.info("Table 'weather_history' already has data. Skipping CSV load.")
+        conn.close()
+        return True
+
     cursor.execute("DELETE FROM weather_history")
 
     for _, row in df.iterrows():
@@ -126,7 +99,7 @@ def load_csv_to_db():
 def index():
     init_db()
     if not load_csv_to_db():
-        return "Error: Could not load data from CSV file.", 500
+        return "Error: Could not load data from CSV file. Please ensure weather_history.csv exists.", 500
 
     try:
         conn = sqlite3.connect(DATABASE_PATH)
@@ -180,17 +153,42 @@ def index():
 
         return render_template('index.html', data=data, unique_dates=unique_dates, selected_date=selected_date, prediction=prediction)
 
+    except sqlite3.Error as e:
+        app.logger.error(f"SQLite database error: {str(e)}")
+        return f"SQLite database error: {str(e)}", 500
     except Exception as e:
-        app.logger.error(f"Error accessing SQLite database: {str(e)}")
-        return f"Error accessing SQLite database: {str(e)}", 500
+        app.logger.error(f"Error rendering template: {str(e)}")
+        return f"Error rendering template: {str(e)}", 500
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    """Trigger the prediction for the next day by calling the prediction function."""
+    """Trigger the prediction for the specified day by running train_model.py."""
     try:
-        # Run the prediction
-        predictions = run_prediction()
-        app.logger.info(f"Prediction completed: {predictions}")
+        # Get the number of days ahead from the form
+        days_ahead = request.form.get('days_ahead', '1')  # Default to 1 if not provided
+        app.logger.info(f"Predicting weather for {days_ahead} days ahead")
+
+        # Run the train_model.py script with the days_ahead argument
+        result = subprocess.run(['python', 'model/train_model.py', '--days-ahead', days_ahead], capture_output=True, text=True)
+        app.logger.info(f"train_model.py output: {result.stdout}")
+        app.logger.info(f"train_model.py errors: {result.stderr}")
+
+        if result.returncode != 0:
+            app.logger.error(f"Error running train_model.py: {result.stderr}")
+            return f"Error running prediction script: {result.stderr}", 500
+
+        # Load the prediction result
+        if os.path.exists(PREDICTION_PATH):
+            try:
+                with open(PREDICTION_PATH, 'rb') as f:
+                    prediction = pickle.load(f)
+                app.logger.info(f"Prediction loaded: {prediction}")
+            except Exception as e:
+                app.logger.error(f"Error loading prediction: {str(e)}")
+                return f"Error loading prediction: {str(e)}", 500
+        else:
+            app.logger.error("Prediction file not found after running train_model.py.")
+            return "Prediction file not found after running train_model.py.", 500
 
         # Redirect back to the index page with the selected date (if any)
         selected_date = request.args.get('date', '')
@@ -201,4 +199,4 @@ def predict():
         return f"Error during prediction: {str(e)}", 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=80)
+    app.run(debug=True, port=5000)

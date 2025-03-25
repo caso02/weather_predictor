@@ -1,39 +1,36 @@
-name: ModelOps (Update Model)
-# Requires GitHub Action Secrets: AZURE_STORAGE_CONNECTION_STRING, MONGODB_URI
+name: Wetter Predictor (Update Model)
+# Requires GitHub Action Secrets: AZURE_STORAGE_CONNECTION_STRING
 
 on:
-  # push:
   workflow_dispatch:
 
 jobs:
   model:
     runs-on: ubuntu-latest
     steps:
+      # Checkout the repository content
+      - name: Checkout repo content
+        uses: actions/checkout@v4
 
-      - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content to github runner
-
-      - name: setup python
-        uses: actions/setup-python@v4
+      # Set up Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.13.0' # install the python version needed
+          python-version: '3.13'
           cache: 'pip'
-          
-      - name: install python packages
+
+      # Install Python packages
+      - name: Install Python packages
         run: pip install -r requirements.txt
-          
-      - name: scrape hikr data 
-        working-directory: ./spider
-        run: scrapy crawl gpx -s CLOSESPIDER_PAGECOUNT=50 -o file.jl
 
-      - name: upload data to mongodb
-        working-directory: spider/downloads
-        run: python ./mongo_import.py -c tracks -i ../file.jl -u "${{secrets.MONGODB_URI}}"
+      # Run train_model.py to train the model and generate predictions
+      - name: Train the model and predict
+        run: python model/train_model.py --days-ahead 1  # Default to 1 day ahead
 
-      - name: build model
-        working-directory: model
-        run: python ./model.py -u "${{secrets.MONGODB_URI}}"
-
-      - name: upload model
-        working-directory: model
-        run: python ./save.py -c "${{secrets.AZURE_STORAGE_CONNECTION_STRING}}"
+      # Upload models and predictions to Azure Blob Storage
+      - name: Upload to Azure Blob Storage
+        env:
+          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+        run: |
+          cd model
+          python save.py -c "$AZURE_STORAGE_CONNECTION_STRING"
