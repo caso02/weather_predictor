@@ -42,16 +42,15 @@ try:
         # Create the container
         container_client = blob_service_client.create_container(container_name)
 
-    # List of model files to upload
-    model_files = [
+    # List of files to upload
+    files_to_upload = [
         "temp_model.pkl",
-        "weather_model.pkl",
-        "weather_label_encoder.pkl"
+        "predictions.pkl"
     ]
 
-    # Upload each model file to the container
-    for local_file_name in model_files:
-        upload_file_path = os.path.join("models", local_file_name)
+    # Upload each file to the container
+    for local_file_name in files_to_upload:
+        upload_file_path = os.path.join("models", local_file_name)  # Relative to model/
         if not os.path.exists(upload_file_path):
             print(f"File {upload_file_path} does not exist. Skipping.")
             continue

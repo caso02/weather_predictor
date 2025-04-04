@@ -1,50 +1,34 @@
 from flask import Flask, render_template, request, redirect, url_for
 import pandas as pd
-import sqlite3
 import os
 import subprocess
 from datetime import datetime
 import pickle
+from pymongo import MongoClient
 
 # Initialize Flask app with the correct template folder
 app = Flask(__name__, template_folder='frontend')
 
+# MongoDB connection (use environment variable for the full URI)
+MONGODB_URI = os.getenv('MONGODB_URI')
+if not MONGODB_URI:
+    raise ValueError("MONGODB_URI environment variable not set")
+
+client = MongoClient(MONGODB_URI)
+db = client['weather_db']
+collection = db['weather_history']
+
 # Path to the weather_history.csv file
 WEATHER_CSV_PATH = os.path.join('scrapy_project', 'data', 'weather_history.csv')
-# Path to the SQLite database
-DATABASE_PATH = 'weather.db'  # Relative path in the root directory
 # Path to the models directory
-MODELS_DIR = 'model/models'  # Relative path to model/models/
+MODELS_DIR = 'model/models'
 # Ensure the models directory exists
 os.makedirs(MODELS_DIR, exist_ok=True)
 # Path to the prediction results
 PREDICTION_PATH = os.path.join(MODELS_DIR, 'predictions.pkl')
 
-def init_db():
-    """Initialize the SQLite database and create the weather_history table."""
-    conn = sqlite3.connect(DATABASE_PATH)
-    cursor = conn.cursor()
-
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS weather_history (
-            Date TEXT,
-            Time TEXT,
-            Temperature TEXT,
-            Weather TEXT,
-            Wind_Speed TEXT,
-            Wind_Direction TEXT,
-            Humidity TEXT,
-            Barometer TEXT,
-            Visibility TEXT,
-            Day TEXT
-        )
-    ''')
-
-    conn.commit()
-    conn.close()
-
 def load_csv_to_db():
-    """Read the CSV file, process the data, and load it into the SQLite database."""
+    """Read the CSV file, process the data, and load it into MongoDB."""
     if not os.path.exists(WEATHER_CSV_PATH):
         app.logger.error(f"weather_history.csv not found at {os.path.abspath(WEATHER_CSV_PATH)}. Please run the Scrapy spider to generate the file.")
         return False
@@ -58,7 +42,10 @@ def load_csv_to_db():
 
     # Process the Date column to add the Day column
     def extract_day(date_str):
-        month_map = {'Mär': '03'}
+        month_map = {
+            'Jan': '01', 'Feb': '02', 'Mär': '03', 'Apr': '04', 'Mai': '05', 'Jun': '06',
+            'Jul': '07', 'Aug': '08', 'Sep': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
+        }
         day, month = date_str.split('. ')
         day = day.strip()
         month = month_map[month.strip()]
@@ -68,51 +55,35 @@ def load_csv_to_db():
 
     df['Day'] = df['Date'].apply(extract_day)
 
-    conn = sqlite3.connect(DATABASE_PATH)
-    cursor = conn.cursor()
+    # Convert DataFrame to list of dictionaries for MongoDB
+    records = df.to_dict('records')
 
-    # Only delete the table contents if we're sure we can load new data
-    cursor.execute("SELECT COUNT(*) FROM weather_history")
-    count = cursor.fetchone()[0]
-    if count > 0:
-        app.logger.info("Table 'weather_history' already has data. Skipping CSV load.")
-        conn.close()
+    # Check if the collection already has data
+    if collection.count_documents({}) > 0:
+        app.logger.info("Collection 'weather_history' already has data. Skipping CSV load.")
         return True
 
-    cursor.execute("DELETE FROM weather_history")
-
-    for _, row in df.iterrows():
-        cursor.execute('''
-            INSERT INTO weather_history (Date, Time, Temperature, Weather, Wind_Speed, Wind_Direction, Humidity, Barometer, Visibility, Day)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ''', (
-            row['Date'], row['Time'], row['Temperature'], row['Weather'], row['Wind_Speed'],
-            row['Wind_Direction'], row['Humidity'], row['Barometer'], row['Visibility'], row['Day']
-        ))
-
-    conn.commit()
-    conn.close()
-    app.logger.info("Data successfully loaded into SQLite database.")
+    # Insert data into MongoDB
+    collection.insert_many(records)
+    app.logger.info("Data successfully loaded into MongoDB.")
     return True
 
 @app.route('/')
 def index():
-    init_db()
     if not load_csv_to_db():
         return "Error: Could not load data from CSV file. Please ensure weather_history.csv exists.", 500
 
     try:
-        conn = sqlite3.connect(DATABASE_PATH)
-        cursor = conn.cursor()
-
         # Fetch unique dates
-        cursor.execute("SELECT DISTINCT Date FROM weather_history")
-        unique_dates = [row[0] for row in cursor.fetchall()]
+        unique_dates = collection.distinct('Date')
         app.logger.info(f"Unique dates (unsorted): {unique_dates}")
 
         # Function to convert date string to datetime for sorting
         def parse_date(date_str):
-            month_map = {'Mär': '03'}
+            month_map = {
+                'Jan': '01', 'Feb': '02', 'Mär': '03', 'Apr': '04', 'Mai': '05', 'Jun': '06',
+                'Jul': '07', 'Aug': '08', 'Sep': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
+            }
             day, month = date_str.split('. ')
             day = day.strip()
             month = month_map[month.strip()]
@@ -128,16 +99,11 @@ def index():
 
         # Fetch the data for the selected date
         if selected_date:
-            cursor.execute("SELECT * FROM weather_history WHERE Date = ? ORDER BY Time", (selected_date,))
-            data = cursor.fetchall()
+            data = list(collection.find({'Date': selected_date}).sort('Time'))
             app.logger.info(f"Filtered data for {selected_date}: {len(data)} rows")
         else:
-            cursor.execute("SELECT * FROM weather_history ORDER BY Date DESC, Time")
-            data = cursor.fetchall()
+            data = list(collection.find().sort([('Date', -1), ('Time', 1)]))
             app.logger.info("No date selected, showing all data")
-
-        columns = ['Date', 'Time', 'Temperature', 'Weather', 'Wind_Speed', 'Wind_Direction', 'Humidity', 'Barometer', 'Visibility', 'Day']
-        data = [dict(zip(columns, row)) for row in data]
 
         # Load prediction results if available
         prediction = None
@@ -149,16 +115,11 @@ def index():
             except Exception as e:
                 app.logger.error(f"Error loading prediction: {str(e)}")
 
-        conn.close()
-
         return render_template('index.html', data=data, unique_dates=unique_dates, selected_date=selected_date, prediction=prediction)
 
-    except sqlite3.Error as e:
-        app.logger.error(f"SQLite database error: {str(e)}")
-        return f"SQLite database error: {str(e)}", 500
     except Exception as e:
-        app.logger.error(f"Error rendering template: {str(e)}")
-        return f"Error rendering template: {str(e)}", 500
+        app.logger.error(f"Error accessing MongoDB: {str(e)}")
+        return f"Error accessing MongoDB: {str(e)}", 500
 
 @app.route('/predict', methods=['POST'])
 def predict():

@@ -1,12 +1,301 @@
 Date,Time,Temperature,Weather,Wind_Speed,Wind_Direction,Humidity,Barometer,Visibility
-20. Mär,17:00,18 °C,Frisch.,2 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",84%,1028 hPa,k.A.
-20. Mär,01:00,1 °C,Frisch.,6 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",88%,1028 hPa,k.A.
-20. Mär,02:00,-1 °C,Frisch.,2 km/h,"Der Wind kommt aus 240° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",90%,1028 hPa,k.A.
-20. Mär,03:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",91%,1028 hPa,k.A.
-20. Mär,04:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 180° (Süd), die Luft bewegt sich also in Richtung Nord.",91%,1028 hPa,k.A.
-20. Mär,05:00,-1 °C,Frisch.,6 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",92%,1029 hPa,k.A.
-20. Mär,06:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",91%,1028 hPa,k.A.
-20. Mär,07:00,1 °C,Teilweise sonnig.,2 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",91%,1029 hPa,30 km
+4. Apr,00:00,9 °C,Kühl.,4 km/h,"Der Wind kommt aus 220° (Südwest), die Luft bewegt sich also in Richtung Nordost.",71%,1021 hPa,k.A.
+4. Apr,01:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",81%,1022 hPa,k.A.
+4. Apr,02:00,6 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",83%,1021 hPa,k.A.
+4. Apr,03:00,6 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 190° (Süd), die Luft bewegt sich also in Richtung Nord.",85%,1021 hPa,k.A.
+4. Apr,04:00,4 °C,Frisch.,4 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",89%,1021 hPa,k.A.
+4. Apr,05:00,4 °C,Frisch.,2 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",95%,1021 hPa,k.A.
+4. Apr,06:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",93%,1021 hPa,k.A.
+4. Apr,07:00,4 °C,Frisch.,2 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",94%,1021 hPa,k.A.
+4. Apr,08:00,5 °C,Sonnig.,Windstill,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",89%,1021 hPa,25 km
+4. Apr,09:00,9 °C,Kühl.,2 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",76%,1020 hPa,k.A.
+3. Apr,00:00,9 °C,Kühl.,4 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",62%,1018 hPa,k.A.
+3. Apr,01:00,9 °C,Kühl.,7 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",66%,1018 hPa,k.A.
+3. Apr,02:00,6 °C,Recht kühl.,11 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",80%,1019 hPa,k.A.
+3. Apr,04:00,5 °C,Recht kühl.,9 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",82%,1020 hPa,k.A.
+3. Apr,05:00,4 °C,Frisch.,9 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",87%,1020 hPa,k.A.
+3. Apr,06:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",88%,1021 hPa,k.A.
+3. Apr,07:00,2 °C,Frisch.,7 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",92%,1022 hPa,k.A.
+3. Apr,08:00,5 °C,Heiter.,6 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",86%,1022 hPa,15 km
+3. Apr,09:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",74%,1022 hPa,k.A.
+3. Apr,10:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",67%,1022 hPa,k.A.
+2. Apr,00:00,11 °C,Kühl.,33 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",64%,1017 hPa,k.A.
+2. Apr,01:00,7 °C,Kühl.,22 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",66%,1017 hPa,k.A.
+2. Apr,02:00,7 °C,Recht kühl.,19 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",69%,1017 hPa,k.A.
+2. Apr,03:00,6 °C,Recht kühl.,11 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",71%,1017 hPa,k.A.
+2. Apr,04:00,6 °C,Recht kühl.,13 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",73%,1017 hPa,k.A.
+2. Apr,05:00,6 °C,Recht kühl.,7 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",73%,1017 hPa,k.A.
+2. Apr,06:00,6 °C,Recht kühl.,11 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",75%,1017 hPa,k.A.
+2. Apr,07:00,5 °C,Recht kühl.,13 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",78%,1017 hPa,k.A.
+2. Apr,08:00,6 °C,Vorüberziehende Wolken.,9 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",75%,1017 hPa,20 km
+2. Apr,09:00,7 °C,Recht kühl.,13 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",70%,1017 hPa,k.A.
+2. Apr,10:00,9 °C,Kühl.,22 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",66%,1017 hPa,k.A.
+2. Apr,11:00,10 °C,Vorüberziehende Wolken.,26 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",60%,1016 hPa,17 km
+2. Apr,12:00,12 °C,Kühl.,24 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",55%,1016 hPa,k.A.
+2. Apr,13:00,13 °C,Erfrischend kühl.,22 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",51%,1015 hPa,k.A.
+2. Apr,14:00,15 °C,Vorüberziehende Wolken.,22 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",45%,1015 hPa,25 km
+2. Apr,15:00,17 °C,Mild.,28 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",43%,1014 hPa,k.A.
+2. Apr,16:00,17 °C,Mild.,26 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",41%,1013 hPa,k.A.
+2. Apr,17:00,17 °C,Sonnig.,32 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",41%,1013 hPa,40 km
+2. Apr,18:00,17 °C,Mild.,30 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",41%,1013 hPa,k.A.
+2. Apr,19:00,16 °C,Erfrischend kühl.,22 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",42%,1014 hPa,k.A.
+2. Apr,20:00,14 °C,Vorüberziehende Wolken.,30 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",49%,1014 hPa,40 km
+2. Apr,21:00,13 °C,Erfrischend kühl.,30 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",53%,1016 hPa,k.A.
+2. Apr,22:00,12 °C,Kühl.,22 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",58%,1016 hPa,k.A.
+1. Apr,00:00,8 °C,Recht kühl.,15 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",65%,1026 hPa,k.A.
+1. Apr,01:00,6 °C,Recht kühl.,20 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",64%,1025 hPa,k.A.
+1. Apr,02:00,5 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 80° (Ost), die Luft bewegt sich also in Richtung West.",68%,1025 hPa,k.A.
+1. Apr,03:00,4 °C,Frisch.,6 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",71%,1024 hPa,k.A.
+1. Apr,05:00,4 °C,Frisch.,15 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",76%,1023 hPa,k.A.
+1. Apr,06:00,4 °C,Frisch.,28 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",75%,1023 hPa,k.A.
+1. Apr,07:00,3 °C,Frisch.,22 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",81%,1023 hPa,k.A.
+1. Apr,08:00,4 °C,Vorüberziehende Wolken.,19 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",75%,1023 hPa,25 km
+1. Apr,09:00,5 °C,Recht kühl.,20 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",73%,1022 hPa,k.A.
+1. Apr,10:00,6 °C,Recht kühl.,22 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",72%,1022 hPa,k.A.
+1. Apr,11:00,7 °C,Teilweise sonnig.,32 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",65%,1021 hPa,20 km
+1. Apr,12:00,9 °C,Kühl.,35 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",53%,1020 hPa,k.A.
+1. Apr,13:00,9 °C,Kühl.,33 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",56%,1019 hPa,k.A.
+1. Apr,14:00,9 °C,Teilweise sonnig.,43 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",52%,1019 hPa,20 km
+1. Apr,15:00,11 °C,Kühl.,46 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",48%,1018 hPa,k.A.
+1. Apr,16:00,11 °C,Kühl.,50 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",45%,1017 hPa,k.A.
+1. Apr,17:00,10 °C,Vorüberziehende Wolken.,48 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",49%,1017 hPa,30 km
+1. Apr,18:00,10 °C,Kühl.,59 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",51%,1016 hPa,k.A.
+1. Apr,19:00,9 °C,Kühl.,56 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",52%,1017 hPa,k.A.
+1. Apr,20:00,9 °C,Vorüberziehende Wolken.,48 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",54%,1017 hPa,35 km
+1. Apr,21:00,8 °C,Kühl.,43 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",55%,1017 hPa,k.A.
+1. Apr,22:00,8 °C,Kühl.,46 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",61%,1017 hPa,k.A.
+1. Apr,23:00,8 °C,Vorüberziehende Wolken.,46 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",63%,1017 hPa,20 km
+31. Mär,00:00,10 °C,Kühl.,13 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",69%,1021 hPa,k.A.
+31. Mär,01:00,9 °C,Kühl.,13 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",71%,1021 hPa,k.A.
+31. Mär,02:00,9 °C,Kühl.,7 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",70%,1021 hPa,k.A.
+31. Mär,03:00,9 °C,Kühl.,15 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",71%,1021 hPa,k.A.
+31. Mär,04:00,7 °C,Kühl.,17 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",78%,1021 hPa,k.A.
+31. Mär,05:00,6 °C,Recht kühl.,11 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",86%,1022 hPa,k.A.
+31. Mär,06:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",86%,1022 hPa,k.A.
+31. Mär,07:00,6 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 220° (Südwest), die Luft bewegt sich also in Richtung Nordost.",86%,1022 hPa,k.A.
+31. Mär,08:00,7 °C,Bedeckt.,11 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",72%,1023 hPa,20 km
+31. Mär,09:00,7 °C,Kühl.,11 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",74%,1023 hPa,k.A.
+31. Mär,10:00,8 °C,Kühl.,9 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",66%,1023 hPa,k.A.
+31. Mär,11:00,10 °C,Teilweise sonnig.,11 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",55%,1024 hPa,25 km
+31. Mär,12:00,9 °C,Kühl.,11 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",51%,1024 hPa,k.A.
+31. Mär,13:00,9 °C,Kühl.,6 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",52%,1024 hPa,k.A.
+31. Mär,14:00,11 °C,Teilweise sonnig.,9 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",47%,1024 hPa,30 km
+31. Mär,15:00,10 °C,Kühl.,9 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",43%,1023 hPa,k.A.
+31. Mär,16:00,11 °C,Kühl.,11 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",44%,1023 hPa,k.A.
+31. Mär,17:00,10 °C,Bedeckt.,19 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",43%,1023 hPa,30 km
+31. Mär,18:00,10 °C,Kühl.,15 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",45%,1024 hPa,k.A.
+31. Mär,19:00,9 °C,Kühl.,15 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",49%,1024 hPa,k.A.
+31. Mär,20:00,8 °C,Vorüberziehende Wolken.,15 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",51%,1025 hPa,30 km
+31. Mär,21:00,8 °C,Kühl.,17 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",52%,1026 hPa,k.A.
+31. Mär,22:00,7 °C,Kühl.,15 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",57%,1026 hPa,k.A.
+31. Mär,23:00,7 °C,Vorüberziehende Wolken.,15 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",59%,1026 hPa,30 km
+30. Mär,01:00,7 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",90%,1021 hPa,k.A.
+30. Mär,03:00,7 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",89%,1021 hPa,k.A.
+30. Mär,04:00,6 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",92%,1021 hPa,k.A.
+30. Mär,05:00,5 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",94%,1021 hPa,k.A.
+30. Mär,06:00,5 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",94%,1022 hPa,k.A.
+30. Mär,07:00,5 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 180° (Süd), die Luft bewegt sich also in Richtung Nord.",93%,1022 hPa,k.A.
+30. Mär,08:00,4 °C,Nebel.,4 km/h,"Der Wind kommt aus 100° (Ost), die Luft bewegt sich also in Richtung West.",98%,1023 hPa,12 km
+30. Mär,09:00,7 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 220° (Südwest), die Luft bewegt sich also in Richtung Nordost.",86%,1022 hPa,k.A.
+30. Mär,10:00,8 °C,Kühl.,9 km/h,"Der Wind kommt aus 220° (Südwest), die Luft bewegt sich also in Richtung Nordost.",79%,1021 hPa,k.A.
+30. Mär,11:00,10 °C,Nebel.,9 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",70%,1021 hPa,9 km
+30. Mär,13:00,13 °C,Kühl.,15 km/h,"Der Wind kommt aus 230° (Südwest), die Luft bewegt sich also in Richtung Nordost.",57%,1020 hPa,k.A.
+30. Mär,14:00,13 °C,Teilweise sonnig.,20 km/h,"Der Wind kommt aus 230° (Südwest), die Luft bewegt sich also in Richtung Nordost.",51%,1019 hPa,22 km
+30. Mär,15:00,14 °C,Erfrischend kühl.,19 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",48%,1018 hPa,k.A.
+30. Mär,16:00,14 °C,Erfrischend kühl.,19 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",34%,1018 hPa,k.A.
+30. Mär,17:00,14 °C,Bedeckt.,22 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",36%,1018 hPa,30 km
+30. Mär,18:00,13 °C,Kühl.,17 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",36%,1018 hPa,k.A.
+30. Mär,19:00,12 °C,Kühl.,22 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",43%,1019 hPa,k.A.
+30. Mär,20:00,11 °C,Vorüberziehende Wolken.,15 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",54%,1020 hPa,25 km
+30. Mär,21:00,11 °C,Kühl.,13 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",63%,1020 hPa,k.A.
+30. Mär,22:00,10 °C,Kühl.,11 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",70%,1021 hPa,k.A.
+30. Mär,23:00,10 °C,Vorüberziehende Wolken.,15 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",69%,1021 hPa,20 km
+29. Mär,00:00,8 °C,Kühl.,2 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",90%,1011 hPa,k.A.
+29. Mär,01:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 180° (Süd), die Luft bewegt sich also in Richtung Nord.",85%,1010 hPa,k.A.
+29. Mär,02:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",87%,1010 hPa,k.A.
+29. Mär,03:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",87%,1010 hPa,k.A.
+29. Mär,04:00,7 °C,Kühl.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",94%,1011 hPa,k.A.
+29. Mär,05:00,7 °C,Kühl.,2 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",96%,1011 hPa,k.A.
+29. Mär,06:00,7 °C,Kühl.,4 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",93%,1011 hPa,k.A.
+29. Mär,07:00,7 °C,Leichter Regen. Bedeckt.,4 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",94%,1012 hPa,5 km
+29. Mär,08:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",95%,1013 hPa,k.A.
+29. Mär,09:00,8 °C,Kühl.,9 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",92%,1014 hPa,k.A.
+29. Mär,10:00,8 °C,Leichter Regen. Niedrige Wolken.,11 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",92%,1014 hPa,4 km
+29. Mär,11:00,9 °C,Kühl.,13 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",90%,1015 hPa,k.A.
+29. Mär,12:00,10 °C,Kühl.,17 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",90%,1016 hPa,k.A.
+29. Mär,13:00,9 °C,Leichter Regen. Bedeckt.,17 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",86%,1016 hPa,6 km
+29. Mär,14:00,11 °C,Kühl.,15 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",76%,1016 hPa,k.A.
+29. Mär,15:00,10 °C,Kühl.,13 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",78%,1016 hPa,k.A.
+29. Mär,16:00,10 °C,Nieselschauer. Bedeckt.,15 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",77%,1016 hPa,6 km
+29. Mär,17:00,11 °C,Kühl.,17 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",72%,1017 hPa,k.A.
+29. Mär,18:00,10 °C,Kühl.,19 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",72%,1017 hPa,k.A.
+29. Mär,19:00,10 °C,Nebel.,17 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",72%,1018 hPa,9 km
+29. Mär,20:00,10 °C,Kühl.,15 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",70%,1019 hPa,k.A.
+29. Mär,21:00,9 °C,Kühl.,19 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",71%,1020 hPa,k.A.
+28. Mär,00:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",84%,1014 hPa,k.A.
+28. Mär,07:00,6 °C,Nebel.,7 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",84%,1014 hPa,10 km
+28. Mär,08:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",82%,1014 hPa,k.A.
+28. Mär,09:00,8 °C,Kühl.,9 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",78%,1014 hPa,k.A.
+28. Mär,10:00,8 °C,Bedeckt.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",73%,1014 hPa,15 km
+28. Mär,11:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",72%,1013 hPa,k.A.
+28. Mär,12:00,8 °C,Kühl.,7 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",70%,1013 hPa,k.A.
+28. Mär,13:00,10 °C,Bedeckt.,11 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",64%,1012 hPa,20 km
+28. Mär,14:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",62%,1011 hPa,k.A.
+28. Mär,17:00,11 °C,Kühl.,6 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",63%,1010 hPa,k.A.
+28. Mär,18:00,11 °C,Kühl.,7 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",66%,1010 hPa,k.A.
+28. Mär,19:00,10 °C,Bedeckt.,9 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",68%,1010 hPa,18 km
+28. Mär,20:00,10 °C,Kühl.,2 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",68%,1011 hPa,k.A.
+28. Mär,21:00,9 °C,Kühl.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",76%,1011 hPa,k.A.
+28. Mär,22:00,10 °C,Bedeckt.,4 km/h,"Der Wind kommt aus 120° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",76%,1011 hPa,17 km
+28. Mär,23:00,8 °C,Kühl.,2 km/h,"Der Wind kommt aus 120° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",82%,1011 hPa,k.A.
+27. Mär,06:00,6 °C,Recht kühl.,9 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",96%,1021 hPa,k.A.
+27. Mär,01:00,8 °C,Kühl.,7 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",94%,1021 hPa,k.A.
+27. Mär,02:00,7 °C,Kühl.,22 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",91%,1020 hPa,k.A.
+27. Mär,03:00,7 °C,Kühl.,19 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",93%,1020 hPa,k.A.
+27. Mär,04:00,7 °C,Recht kühl.,20 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",91%,1020 hPa,k.A.
+27. Mär,05:00,7 °C,Recht kühl.,19 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",90%,1020 hPa,k.A.
+27. Mär,06:00,7 °C,Recht kühl.,17 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",89%,1020 hPa,k.A.
+27. Mär,07:00,7 °C,Niedrige Wolken.,20 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",87%,1020 hPa,9 km
+27. Mär,08:00,7 °C,Recht kühl.,11 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",83%,1020 hPa,k.A.
+27. Mär,09:00,7 °C,Kühl.,9 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",77%,1020 hPa,k.A.
+27. Mär,10:00,9 °C,Teilweise sonnig.,20 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",69%,1020 hPa,15 km
+27. Mär,11:00,11 °C,Kühl.,17 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",64%,1019 hPa,k.A.
+27. Mär,12:00,10 °C,Kühl.,19 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",66%,1018 hPa,k.A.
+27. Mär,13:00,10 °C,Bedeckt.,22 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",66%,1018 hPa,20 km
+27. Mär,14:00,10 °C,Kühl.,19 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",66%,1018 hPa,k.A.
+27. Mär,15:00,10 °C,Kühl.,20 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",63%,1017 hPa,k.A.
+26. Mär,01:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 120° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",97%,1020 hPa,k.A.
+26. Mär,02:00,8 °C,Kühl.,2 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",97%,1020 hPa,k.A.
+26. Mär,03:00,7 °C,Kühl.,2 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",98%,1020 hPa,k.A.
+26. Mär,04:00,7 °C,Kühl.,6 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",99%,1020 hPa,k.A.
+26. Mär,05:00,7 °C,Kühl.,2 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",99%,1020 hPa,k.A.
+26. Mär,06:00,7 °C,Kühl.,2 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",97%,1020 hPa,k.A.
+26. Mär,07:00,8 °C,Leichter Regen. Niedrige Wolken.,2 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",97%,1020 hPa,3 km
+26. Mär,08:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",86%,1020 hPa,k.A.
+26. Mär,09:00,9 °C,Kühl.,6 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",84%,1020 hPa,k.A.
+26. Mär,10:00,10 °C,Nebel.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",82%,1020 hPa,10 km
+26. Mär,11:00,11 °C,Kühl.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",74%,1020 hPa,k.A.
+26. Mär,12:00,12 °C,Kühl.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",64%,1020 hPa,k.A.
+26. Mär,13:00,13 °C,Teilweise sonnig.,6 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",61%,1019 hPa,10 km
+26. Mär,14:00,13 °C,Kühl.,15 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",60%,1019 hPa,k.A.
+26. Mär,15:00,11 °C,Kühl.,9 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",70%,1019 hPa,k.A.
+26. Mär,16:00,11 °C,Leichter Regen. Bedeckt.,9 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",72%,1019 hPa,8 km
+26. Mär,19:00,9 °C,Leichter Regen. Bedeckt.,4 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",91%,1020 hPa,4 km
+26. Mär,20:00,9 °C,Kühl.,4 km/h,"Der Wind kommt aus 100° (Ost), die Luft bewegt sich also in Richtung West.",89%,1021 hPa,k.A.
+26. Mär,21:00,9 °C,Kühl.,6 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",90%,1021 hPa,k.A.
+25. Mär,01:00,10 °C,Kühl.,7 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",78%,1018 hPa,k.A.
+25. Mär,02:00,9 °C,Kühl.,2 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",82%,1018 hPa,k.A.
+25. Mär,03:00,8 °C,Kühl.,2 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",87%,1018 hPa,k.A.
+25. Mär,04:00,7 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",94%,1018 hPa,k.A.
+25. Mär,05:00,7 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",93%,1019 hPa,k.A.
+25. Mär,06:00,6 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 120° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",94%,1019 hPa,k.A.
+25. Mär,07:00,8 °C,Bedeckt.,7 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",91%,1019 hPa,14 km
+25. Mär,08:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",88%,1020 hPa,k.A.
+25. Mär,09:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",88%,1020 hPa,k.A.
+25. Mär,10:00,9 °C,Leichter Regen. Bedeckt.,7 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",84%,1020 hPa,10 km
+25. Mär,11:00,11 °C,Kühl.,6 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",78%,1020 hPa,k.A.
+25. Mär,12:00,12 °C,Kühl.,7 km/h,"Der Wind kommt aus 120° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",69%,1019 hPa,k.A.
+25. Mär,13:00,14 °C,Teilweise sonnig.,6 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",68%,1019 hPa,20 km
+25. Mär,14:00,12 °C,Kühl.,17 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",63%,1019 hPa,k.A.
+25. Mär,15:00,10 °C,Kühl.,7 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",84%,1019 hPa,k.A.
+25. Mär,16:00,10 °C,Leichter Regen. Bedeckt.,19 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",87%,1019 hPa,10 km
+25. Mär,17:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",88%,1019 hPa,k.A.
+25. Mär,18:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",91%,1019 hPa,k.A.
+25. Mär,19:00,10 °C,Bedeckt.,4 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",93%,1020 hPa,20 km
+25. Mär,20:00,9 °C,Kühl.,6 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",93%,1020 hPa,k.A.
+25. Mär,21:00,9 °C,Kühl.,6 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",90%,1020 hPa,k.A.
+24. Mär,00:00,9 °C,Kühl.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",87%,1010 hPa,k.A.
+24. Mär,01:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",85%,1010 hPa,k.A.
+24. Mär,02:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",92%,1011 hPa,k.A.
+24. Mär,03:00,8 °C,Kühl.,2 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",89%,1011 hPa,k.A.
+24. Mär,04:00,8 °C,Kühl.,2 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",88%,1011 hPa,k.A.
+24. Mär,05:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",96%,1011 hPa,k.A.
+24. Mär,06:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",97%,1012 hPa,k.A.
+24. Mär,07:00,8 °C,Nieselschauer. Bedeckt.,2 km/h,"Der Wind kommt aus 200° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",97%,1012 hPa,8 km
+24. Mär,08:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",94%,1013 hPa,k.A.
+24. Mär,09:00,9 °C,Kühl.,2 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",90%,1014 hPa,k.A.
+24. Mär,10:00,10 °C,Bedeckt.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",84%,1014 hPa,17 km
+24. Mär,11:00,11 °C,Kühl.,7 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",80%,1014 hPa,k.A.
+24. Mär,12:00,12 °C,Kühl.,6 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",73%,1014 hPa,k.A.
+24. Mär,13:00,13 °C,Teilweise sonnig.,7 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",68%,1013 hPa,25 km
+24. Mär,14:00,14 °C,Erfrischend kühl.,13 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",57%,1013 hPa,k.A.
+24. Mär,15:00,16 °C,Erfrischend kühl.,13 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",52%,1013 hPa,k.A.
+24. Mär,16:00,14 °C,Heiter.,19 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",58%,1013 hPa,25 km
+24. Mär,17:00,15 °C,Erfrischend kühl.,19 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",55%,1013 hPa,k.A.
+24. Mär,18:00,13 °C,Kühl.,19 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",58%,1014 hPa,k.A.
+24. Mär,20:00,12 °C,Kühl.,4 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",62%,1016 hPa,k.A.
+24. Mär,21:00,11 °C,Kühl.,7 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",66%,1017 hPa,k.A.
+24. Mär,22:00,11 °C,Bedeckt.,9 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",70%,1017 hPa,20 km
+24. Mär,23:00,11 °C,Kühl.,6 km/h,"Der Wind kommt aus 80° (Ost), die Luft bewegt sich also in Richtung West.",73%,1018 hPa,k.A.
+23. Mär,00:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",59%,1001 hPa,k.A.
+23. Mär,01:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",67%,1001 hPa,k.A.
+23. Mär,02:00,9 °C,Kühl.,13 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",69%,1002 hPa,k.A.
+23. Mär,03:00,9 °C,Kühl.,13 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",80%,1001 hPa,k.A.
+23. Mär,04:00,9 °C,Kühl.,6 km/h,"Der Wind kommt aus 190° (Süd), die Luft bewegt sich also in Richtung Nord.",79%,1002 hPa,k.A.
+23. Mär,05:00,10 °C,Kühl.,13 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",75%,1003 hPa,k.A.
+23. Mär,06:00,9 °C,Kühl.,9 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",76%,1004 hPa,k.A.
+23. Mär,07:00,9 °C,Bedeckt.,9 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",76%,1005 hPa,35 km
+23. Mär,08:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 200° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",76%,1006 hPa,k.A.
+23. Mär,09:00,9 °C,Kühl.,13 km/h,"Der Wind kommt aus 240° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",82%,1006 hPa,k.A.
+23. Mär,10:00,9 °C,Regen. Bedeckt.,9 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",94%,1008 hPa,18 km
+23. Mär,11:00,9 °C,Kühl.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",87%,1008 hPa,k.A.
+23. Mär,12:00,11 °C,Kühl.,6 km/h,"Der Wind kommt aus 230° (Südwest), die Luft bewegt sich also in Richtung Nordost.",80%,1007 hPa,k.A.
+23. Mär,13:00,12 °C,Bedeckt.,7 km/h,"Der Wind kommt aus 200° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",71%,1007 hPa,18 km
+23. Mär,14:00,13 °C,Kühl.,7 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",62%,1007 hPa,k.A.
+23. Mär,15:00,14 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",57%,1006 hPa,k.A.
+23. Mär,16:00,14 °C,Heiter.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",55%,1006 hPa,30 km
+23. Mär,17:00,14 °C,Erfrischend kühl.,4 km/h,"Der Wind kommt aus 180° (Süd), die Luft bewegt sich also in Richtung Nord.",52%,1006 hPa,k.A.
+23. Mär,18:00,14 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",52%,1007 hPa,k.A.
+23. Mär,19:00,13 °C,Bedeckt.,9 km/h,"Der Wind kommt aus 90° (Ost), die Luft bewegt sich also in Richtung West.",61%,1007 hPa,40 km
+23. Mär,20:00,12 °C,Kühl.,6 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",66%,1008 hPa,k.A.
+23. Mär,21:00,11 °C,Kühl.,4 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",73%,1009 hPa,k.A.
+23. Mär,22:00,10 °C,Bedeckt.,2 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",76%,1009 hPa,40 km
+22. Mär,00:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",71%,1007 hPa,k.A.
+22. Mär,01:00,8 °C,Kühl.,2 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",79%,1008 hPa,k.A.
+22. Mär,02:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",79%,1008 hPa,k.A.
+22. Mär,03:00,10 °C,Kühl.,9 km/h,"Der Wind kommt aus 200° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",67%,1007 hPa,k.A.
+22. Mär,04:00,9 °C,Kühl.,7 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",77%,1007 hPa,k.A.
+22. Mär,05:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 240° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",77%,1007 hPa,k.A.
+22. Mär,06:00,6 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",85%,1009 hPa,k.A.
+22. Mär,07:00,6 °C,Nebel.,7 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",82%,1009 hPa,13 km
+22. Mär,08:00,12 °C,Kühl.,7 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",67%,1008 hPa,k.A.
+22. Mär,09:00,14 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",54%,1007 hPa,k.A.
+22. Mär,10:00,16 °C,Heiter.,6 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",50%,1007 hPa,25 km
+22. Mär,11:00,17 °C,Mild.,4 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",47%,1006 hPa,k.A.
+22. Mär,12:00,18 °C,Mild.,13 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",40%,1005 hPa,k.A.
+22. Mär,13:00,19 °C,Teilweise sonnig.,11 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",36%,1004 hPa,28 km
+22. Mär,14:00,19 °C,Mild.,6 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",33%,1003 hPa,k.A.
+22. Mär,16:00,20 °C,Teilweise sonnig.,6 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",28%,1001 hPa,40 km
+22. Mär,17:00,19 °C,Mild.,15 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",27%,1001 hPa,k.A.
+22. Mär,18:00,17 °C,Mild.,9 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",30%,1001 hPa,k.A.
+22. Mär,19:00,16 °C,Vorüberziehende Wolken.,9 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",31%,1001 hPa,50 km
+22. Mär,20:00,14 °C,Erfrischend kühl.,17 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",37%,1001 hPa,k.A.
+22. Mär,21:00,14 °C,Erfrischend kühl.,13 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",37%,1001 hPa,k.A.
+22. Mär,22:00,13 °C,Vorüberziehende Wolken.,9 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",37%,1001 hPa,50 km
+22. Mär,23:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",54%,1001 hPa,k.A.
+21. Mär,00:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",71%,1023 hPa,k.A.
+21. Mär,01:00,4 °C,Frisch.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",87%,1023 hPa,k.A.
+21. Mär,02:00,4 °C,Frisch.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",89%,1022 hPa,k.A.
+21. Mär,03:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",90%,1022 hPa,k.A.
+21. Mär,04:00,2 °C,Frisch.,6 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",92%,1021 hPa,k.A.
+21. Mär,05:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",91%,1021 hPa,k.A.
+21. Mär,06:00,2 °C,Frisch.,7 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",93%,1021 hPa,k.A.
+21. Mär,07:00,2 °C,Bedeckt.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",92%,1021 hPa,30 km
+21. Mär,08:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",86%,1020 hPa,k.A.
+21. Mär,09:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",72%,1019 hPa,k.A.
+21. Mär,10:00,10 °C,Bedeckt.,9 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",66%,1018 hPa,30 km
+21. Mär,11:00,12 °C,Kühl.,9 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",50%,1017 hPa,k.A.
+21. Mär,12:00,13 °C,Kühl.,7 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",48%,1016 hPa,k.A.
+21. Mär,13:00,14 °C,Bedeckt.,7 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",43%,1015 hPa,30 km
+21. Mär,14:00,16 °C,Erfrischend kühl.,15 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",39%,1014 hPa,k.A.
+21. Mär,15:00,17 °C,Mild.,15 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",37%,1012 hPa,k.A.
+21. Mär,16:00,17 °C,Bedeckt.,9 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",36%,1011 hPa,25 km
+21. Mär,17:00,17 °C,Mild.,7 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",39%,1010 hPa,k.A.
+21. Mär,18:00,16 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",43%,1010 hPa,k.A.
+21. Mär,19:00,16 °C,Bedeckt.,9 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",41%,1009 hPa,20 km
+21. Mär,20:00,16 °C,Erfrischend kühl.,11 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",44%,1008 hPa,k.A.
+21. Mär,21:00,14 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",50%,1008 hPa,k.A.
+21. Mär,22:00,9 °C,Bedeckt.,6 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",72%,1008 hPa,20 km
 20. Mär,08:00,4 °C,Frisch.,2 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",80%,1028 hPa,k.A.
 20. Mär,09:00,5 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",78%,1028 hPa,k.A.
 20. Mär,10:00,7 °C,Bedeckt.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",72%,1027 hPa,50 km
@@ -17,324 +306,8 @@ Date,Time,Temperature,Weather,Wind_Speed,Wind_Direction,Humidity,Barometer,Visib
 20. Mär,15:00,18 °C,Mild.,4 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",31%,1022 hPa,k.A.
 20. Mär,16:00,18 °C,Heiter.,6 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",31%,1021 hPa,40 km
 20. Mär,17:00,18 °C,Mild.,7 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",28%,1020 hPa,k.A.
-19. Mär,00:00,1 °C,Frisch.,11 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",70%,1027 hPa,k.A.
-19. Mär,01:00,-1 °C,Frisch.,2 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",75%,1028 hPa,k.A.
-19. Mär,02:00,-1 °C,Frisch.,2 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",79%,1028 hPa,k.A.
-19. Mär,03:00,-2 °C,Frisch.,4 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",91%,1029 hPa,k.A.
-19. Mär,04:00,-2 °C,Frisch.,4 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",85%,1029 hPa,k.A.
-19. Mär,05:00,-2 °C,Frisch.,Windstill,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",89%,1029 hPa,k.A.
-19. Mär,06:00,-3 °C,Frisch.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",88%,1030 hPa,k.A.
-19. Mär,07:00,-3 °C,Sonnig.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",88%,1030 hPa,25 km
-19. Mär,08:00,-1 °C,Frisch.,2 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",82%,1030 hPa,k.A.
-19. Mär,09:00,2 °C,Frisch.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",72%,1030 hPa,k.A.
-19. Mär,10:00,5 °C,Sonnig.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",63%,1029 hPa,25 km
-19. Mär,12:00,10 °C,Kühl.,6 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",53%,1027 hPa,k.A.
-19. Mär,13:00,12 °C,Sonnig.,4 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",48%,1026 hPa,25 km
-19. Mär,14:00,14 °C,Erfrischend kühl.,2 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",25%,1025 hPa,k.A.
-19. Mär,16:00,16 °C,Sonnig.,2 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",26%,1024 hPa,60 km
-19. Mär,17:00,16 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 190° (Süd), die Luft bewegt sich also in Richtung Nord.",26%,1024 hPa,k.A.
-19. Mär,18:00,15 °C,Erfrischend kühl.,4 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",28%,1024 hPa,k.A.
-19. Mär,19:00,11 °C,Heiter.,6 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",42%,1025 hPa,60 km
-18. Mär,00:00,1 °C,Frisch.,32 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",65%,1025 hPa,k.A.
-18. Mär,01:00,2 °C,Frisch.,24 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",65%,1025 hPa,k.A.
-18. Mär,02:00,1 °C,Frisch.,7 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",65%,1026 hPa,k.A.
-18. Mär,03:00,1 °C,Frisch.,17 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",66%,1026 hPa,k.A.
-18. Mär,04:00,0 °C,Frisch.,11 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",69%,1026 hPa,k.A.
-18. Mär,05:00,-1 °C,Frisch.,7 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",76%,1026 hPa,k.A.
-18. Mär,06:00,-1 °C,Frisch.,15 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",77%,1027 hPa,k.A.
-18. Mär,07:00,-2 °C,Vorüberziehende Wolken.,9 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",79%,1027 hPa,20 km
-18. Mär,08:00,0 °C,Frisch.,9 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",69%,1027 hPa,k.A.
-18. Mär,09:00,2 °C,Frisch.,11 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",64%,1027 hPa,k.A.
-18. Mär,10:00,3 °C,Vorüberziehende Wolken.,15 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",60%,1028 hPa,20 km
-18. Mär,12:00,6 °C,Recht kühl.,17 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",54%,1026 hPa,k.A.
-18. Mär,13:00,7 °C,Sonnig.,15 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",49%,1026 hPa,22 km
-18. Mär,14:00,8 °C,Kühl.,15 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",48%,1025 hPa,k.A.
-18. Mär,16:00,10 °C,Sonnig.,13 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",42%,1024 hPa,25 km
-18. Mär,17:00,10 °C,Kühl.,11 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",43%,1024 hPa,k.A.
-18. Mär,18:00,9 °C,Kühl.,9 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",42%,1024 hPa,k.A.
-18. Mär,19:00,7 °C,Heiter.,7 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",49%,1024 hPa,25 km
-18. Mär,20:00,6 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",52%,1025 hPa,k.A.
-18. Mär,21:00,4 °C,Frisch.,9 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",65%,1026 hPa,k.A.
-18. Mär,22:00,3 °C,Heiter.,11 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",65%,1026 hPa,20 km
-18. Mär,23:00,1 °C,Frisch.,11 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",68%,1027 hPa,k.A.
-17. Mär,00:00,2 °C,Frisch.,4 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",96%,1022 hPa,k.A.
-17. Mär,01:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",95%,1022 hPa,k.A.
-17. Mär,02:00,3 °C,Frisch.,2 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",95%,1022 hPa,k.A.
-17. Mär,03:00,3 °C,Frisch.,6 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",95%,1023 hPa,k.A.
-17. Mär,04:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",96%,1022 hPa,k.A.
-17. Mär,05:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",97%,1022 hPa,k.A.
-17. Mär,06:00,3 °C,Frisch.,7 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",95%,1022 hPa,k.A.
-17. Mär,07:00,3 °C,Nebel.,7 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",95%,1022 hPa,4 km
-17. Mär,08:00,3 °C,Frisch.,6 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",90%,1023 hPa,k.A.
-17. Mär,09:00,4 °C,Frisch.,11 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",83%,1023 hPa,k.A.
-17. Mär,10:00,5 °C,Nebel.,22 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",78%,1023 hPa,13 km
-17. Mär,11:00,6 °C,Recht kühl.,24 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",65%,1023 hPa,k.A.
-17. Mär,12:00,7 °C,Kühl.,30 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",54%,1023 hPa,k.A.
-17. Mär,13:00,8 °C,Vorüberziehende Wolken.,28 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",53%,1022 hPa,17 km
-17. Mär,15:00,10 °C,Kühl.,24 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",49%,1022 hPa,k.A.
-17. Mär,16:00,8 °C,Heiter.,32 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",49%,1023 hPa,20 km
-17. Mär,17:00,8 °C,Kühl.,30 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",45%,1022 hPa,k.A.
-17. Mär,18:00,7 °C,Recht kühl.,32 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",52%,1024 hPa,k.A.
-17. Mär,19:00,5 °C,Vorüberziehende Wolken.,24 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",58%,1024 hPa,25 km
-17. Mär,20:00,5 °C,Recht kühl.,30 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",59%,1025 hPa,k.A.
-17. Mär,21:00,4 °C,Frisch.,35 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",63%,1025 hPa,k.A.
-17. Mär,22:00,4 °C,Vorüberziehende Wolken.,37 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",67%,1025 hPa,20 km
-16. Mär,00:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",93%,1012 hPa,k.A.
-16. Mär,01:00,4 °C,Frisch.,6 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",92%,1012 hPa,k.A.
-16. Mär,02:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",95%,1012 hPa,k.A.
-16. Mär,03:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",95%,1012 hPa,k.A.
-16. Mär,04:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",94%,1012 hPa,k.A.
-16. Mär,05:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",93%,1013 hPa,k.A.
-16. Mär,06:00,4 °C,Frisch.,6 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",93%,1014 hPa,k.A.
-16. Mär,07:00,4 °C,Regen. Niedrige Wolken.,6 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",93%,1014 hPa,7 km
-16. Mär,08:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",90%,1014 hPa,k.A.
-16. Mär,09:00,4 °C,Frisch.,6 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",88%,1015 hPa,k.A.
-16. Mär,10:00,4 °C,Regen. Niedrige Wolken.,6 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",89%,1016 hPa,7 km
-16. Mär,11:00,4 °C,Frisch.,15 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",89%,1016 hPa,k.A.
-16. Mär,12:00,4 °C,Frisch.,9 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",88%,1016 hPa,k.A.
-16. Mär,13:00,5 °C,Regen. Niedrige Wolken.,6 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",85%,1017 hPa,9 km
-16. Mär,14:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",87%,1017 hPa,k.A.
-16. Mär,15:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",89%,1018 hPa,k.A.
-16. Mär,16:00,4 °C,Leichter Regen. Niedrige Wolken.,4 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",88%,1018 hPa,11 km
-16. Mär,17:00,4 °C,Frisch.,9 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",90%,1018 hPa,k.A.
-16. Mär,18:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",91%,1019 hPa,k.A.
-16. Mär,19:00,4 °C,Leichter Regen. Niedrige Wolken.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",93%,1020 hPa,6 km
-16. Mär,20:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",93%,1021 hPa,k.A.
-16. Mär,21:00,3 °C,Frisch.,7 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",92%,1021 hPa,k.A.
-16. Mär,22:00,3 °C,Leichter Regen. Niedrige Wolken.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",91%,1022 hPa,6 km
-15. Mär,00:00,4 °C,Frisch.,11 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",71%,1008 hPa,k.A.
-15. Mär,01:00,4 °C,Frisch.,15 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",72%,1007 hPa,k.A.
-15. Mär,02:00,4 °C,Frisch.,15 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",72%,1008 hPa,k.A.
-15. Mär,03:00,4 °C,Frisch.,19 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",73%,1007 hPa,k.A.
-15. Mär,04:00,4 °C,Frisch.,20 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",75%,1007 hPa,k.A.
-15. Mär,05:00,5 °C,Recht kühl.,20 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",76%,1007 hPa,k.A.
-15. Mär,06:00,5 °C,Recht kühl.,19 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",78%,1007 hPa,k.A.
-15. Mär,07:00,5 °C,Nebel.,13 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",79%,1008 hPa,8 km
-15. Mär,08:00,5 °C,Recht kühl.,22 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",80%,1008 hPa,k.A.
-15. Mär,09:00,5 °C,Recht kühl.,22 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",77%,1008 hPa,k.A.
-15. Mär,10:00,6 °C,Nieselregen. Bedeckt.,15 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",76%,1008 hPa,8 km
-15. Mär,11:00,6 °C,Recht kühl.,15 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",74%,1008 hPa,k.A.
-15. Mär,12:00,7 °C,Recht kühl.,20 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",70%,1008 hPa,k.A.
-15. Mär,13:00,7 °C,Bedeckt.,24 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",69%,1008 hPa,20 km
-15. Mär,15:00,7 °C,Recht kühl.,26 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",68%,1009 hPa,k.A.
-15. Mär,16:00,6 °C,Bedeckt.,24 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",69%,1009 hPa,20 km
-15. Mär,17:00,6 °C,Recht kühl.,26 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",70%,1009 hPa,k.A.
-15. Mär,18:00,6 °C,Recht kühl.,26 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",74%,1010 hPa,k.A.
-15. Mär,19:00,5 °C,Bedeckt.,28 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",80%,1010 hPa,20 km
-15. Mär,20:00,5 °C,Recht kühl.,32 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",83%,1011 hPa,k.A.
-15. Mär,21:00,4 °C,Frisch.,24 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",87%,1011 hPa,k.A.
-15. Mär,22:00,4 °C,Nebel.,19 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",83%,1012 hPa,10 km
-15. Mär,23:00,4 °C,Frisch.,17 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",87%,1012 hPa,k.A.
-14. Mär,00:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 210° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",80%,1003 hPa,k.A.
-14. Mär,01:00,3 °C,Frisch.,9 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",83%,1004 hPa,k.A.
-14. Mär,02:00,2 °C,Frisch.,9 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",86%,1004 hPa,k.A.
-14. Mär,03:00,2 °C,Frisch.,6 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",83%,1004 hPa,k.A.
-14. Mär,04:00,2 °C,Frisch.,4 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",80%,1004 hPa,k.A.
-14. Mär,05:00,2 °C,Frisch.,4 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",86%,1004 hPa,k.A.
-14. Mär,06:00,2 °C,Frisch.,6 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",86%,1004 hPa,k.A.
-14. Mär,07:00,1 °C,Bedeckt.,6 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",87%,1004 hPa,14 km
-14. Mär,08:00,2 °C,Frisch.,9 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",87%,1004 hPa,k.A.
-14. Mär,09:00,3 °C,Frisch.,11 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",80%,1005 hPa,k.A.
-14. Mär,10:00,4 °C,Bedeckt.,17 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",68%,1005 hPa,22 km
-14. Mär,11:00,4 °C,Recht kühl.,15 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",66%,1005 hPa,k.A.
-14. Mär,12:00,6 °C,Recht kühl.,13 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",63%,1005 hPa,k.A.
-14. Mär,13:00,7 °C,Teilweise sonnig.,15 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",60%,1005 hPa,22 km
-14. Mär,14:00,7 °C,Recht kühl.,15 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",60%,1004 hPa,k.A.
-14. Mär,15:00,7 °C,Recht kühl.,13 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",59%,1004 hPa,k.A.
-14. Mär,16:00,7 °C,Bedeckt.,11 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",59%,1005 hPa,25 km
-14. Mär,17:00,7 °C,Recht kühl.,19 km/h,"Der Wind kommt aus 90° (Ost), die Luft bewegt sich also in Richtung West.",60%,1005 hPa,k.A.
-14. Mär,18:00,6 °C,Recht kühl.,17 km/h,"Der Wind kommt aus 80° (Ost), die Luft bewegt sich also in Richtung West.",63%,1006 hPa,k.A.
-14. Mär,19:00,6 °C,Bedeckt.,11 km/h,"Der Wind kommt aus 80° (Ost), die Luft bewegt sich also in Richtung West.",67%,1006 hPa,25 km
-14. Mär,20:00,5 °C,Recht kühl.,17 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",67%,1007 hPa,k.A.
-14. Mär,21:00,4 °C,Frisch.,17 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",72%,1008 hPa,k.A.
-14. Mär,22:00,4 °C,Bedeckt.,17 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",71%,1008 hPa,20 km
-13. Mär,00:00,6 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 80° (Ost), die Luft bewegt sich also in Richtung West.",94%,997 hPa,k.A.
-13. Mär,01:00,5 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",92%,997 hPa,k.A.
-13. Mär,02:00,5 °C,Recht kühl.,11 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",93%,996 hPa,k.A.
-13. Mär,03:00,5 °C,Recht kühl.,7 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",93%,995 hPa,k.A.
-13. Mär,04:00,5 °C,Recht kühl.,9 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",93%,995 hPa,k.A.
-13. Mär,05:00,5 °C,Recht kühl.,9 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",93%,994 hPa,k.A.
-13. Mär,06:00,5 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",92%,995 hPa,k.A.
-13. Mär,07:00,5 °C,Regenschauer. Bedeckt.,7 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",95%,995 hPa,3 km
-13. Mär,08:00,5 °C,Recht kühl.,7 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",95%,995 hPa,k.A.
-13. Mär,09:00,5 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",94%,995 hPa,k.A.
-13. Mär,10:00,6 °C,Nieselschauer. Niedrige Wolken.,4 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",92%,995 hPa,6 km
-13. Mär,11:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 220° (Südwest), die Luft bewegt sich also in Richtung Nordost.",90%,996 hPa,k.A.
-13. Mär,12:00,6 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",83%,996 hPa,k.A.
-13. Mär,13:00,8 °C,Bedeckt.,6 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",78%,996 hPa,20 km
-13. Mär,14:00,9 °C,Kühl.,9 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",61%,995 hPa,k.A.
-13. Mär,15:00,9 °C,Kühl.,6 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",63%,996 hPa,k.A.
-13. Mär,16:00,9 °C,Bedeckt.,6 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",68%,996 hPa,40 km
-13. Mär,17:00,7 °C,Recht kühl.,20 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",70%,997 hPa,k.A.
-13. Mär,18:00,6 °C,Recht kühl.,17 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",75%,998 hPa,k.A.
-13. Mär,19:00,5 °C,Leichter Regen. Bedeckt.,15 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",74%,1000 hPa,17 km
-13. Mär,20:00,4 °C,Frisch.,15 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",76%,1001 hPa,k.A.
-13. Mär,21:00,4 °C,Frisch.,11 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",76%,1002 hPa,k.A.
-13. Mär,22:00,4 °C,Bedeckt.,7 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",76%,1002 hPa,15 km
-13. Mär,23:00,3 °C,Frisch.,11 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",78%,1003 hPa,k.A.
-12. Mär,00:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",85%,1001 hPa,k.A.
-12. Mär,01:00,4 °C,Frisch.,2 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",95%,1000 hPa,k.A.
-12. Mär,02:00,4 °C,Frisch.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",92%,999 hPa,k.A.
-12. Mär,03:00,3 °C,Frisch.,2 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",92%,999 hPa,k.A.
-12. Mär,04:00,2 °C,Frisch.,6 km/h,"Der Wind kommt aus 120° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",97%,999 hPa,k.A.
-12. Mär,05:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",94%,999 hPa,k.A.
-12. Mär,06:00,3 °C,Frisch.,6 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",94%,999 hPa,k.A.
-12. Mär,07:00,4 °C,Bedeckt.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",94%,998 hPa,17 km
-12. Mär,08:00,5 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",93%,998 hPa,k.A.
-12. Mär,09:00,6 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",92%,998 hPa,k.A.
-12. Mär,10:00,7 °C,Leichter Regen. Bedeckt.,6 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",93%,998 hPa,7 km
-12. Mär,11:00,7 °C,Kühl.,13 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",86%,999 hPa,k.A.
-12. Mär,12:00,8 °C,Kühl.,13 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",81%,998 hPa,k.A.
-12. Mär,13:00,9 °C,Bedeckt.,7 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",76%,998 hPa,20 km
-12. Mär,14:00,8 °C,Kühl.,11 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",80%,998 hPa,k.A.
-12. Mär,15:00,8 °C,Kühl.,9 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",76%,997 hPa,k.A.
-12. Mär,16:00,8 °C,Bedeckt.,7 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",73%,997 hPa,25 km
-12. Mär,17:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",78%,997 hPa,k.A.
-12. Mär,18:00,8 °C,Kühl.,11 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",82%,997 hPa,k.A.
-12. Mär,19:00,6 °C,Nieselschauer. Bedeckt.,13 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",90%,998 hPa,8 km
-12. Mär,20:00,6 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",90%,998 hPa,k.A.
-12. Mär,21:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",95%,998 hPa,k.A.
-12. Mär,22:00,6 °C,Leichter Regen. Bedeckt.,7 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",94%,998 hPa,8 km
-12. Mär,23:00,6 °C,Recht kühl.,7 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",92%,997 hPa,k.A.
-11. Mär,00:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",93%,1007 hPa,k.A.
-11. Mär,01:00,2 °C,Frisch.,2 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",97%,1007 hPa,k.A.
-11. Mär,02:00,1 °C,Frisch.,2 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",98%,1007 hPa,k.A.
-11. Mär,03:00,1 °C,Frisch.,2 km/h,"Der Wind kommt aus 180° (Süd), die Luft bewegt sich also in Richtung Nord.",97%,1006 hPa,k.A.
-11. Mär,04:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",99%,1006 hPa,k.A.
-11. Mär,05:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",100%,1006 hPa,k.A.
-11. Mär,06:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 240° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",100%,1006 hPa,k.A.
-11. Mär,07:00,0 °C,Nebel.,6 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",99%,1006 hPa,0 km
-11. Mär,08:00,0 °C,Frisch.,6 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",100%,1006 hPa,k.A.
-11. Mär,09:00,4 °C,Frisch.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",95%,1006 hPa,k.A.
-11. Mär,10:00,6 °C,Nebel.,2 km/h,"Der Wind kommt aus 230° (Südwest), die Luft bewegt sich also in Richtung Nordost.",90%,1005 hPa,5 km
-11. Mär,11:00,10 °C,Kühl.,2 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",73%,1004 hPa,k.A.
-11. Mär,13:00,14 °C,Vorüberziehende Wolken.,6 km/h,"Der Wind kommt aus 230° (Südwest), die Luft bewegt sich also in Richtung Nordost.",51%,1002 hPa,18 km
-11. Mär,14:00,14 °C,Erfrischend kühl.,7 km/h,"Der Wind kommt aus 210° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",45%,1001 hPa,k.A.
-11. Mär,15:00,14 °C,Erfrischend kühl.,2 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",40%,1000 hPa,k.A.
-11. Mär,16:00,15 °C,Teilweise sonnig.,4 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",44%,999 hPa,30 km
-11. Mär,17:00,14 °C,Erfrischend kühl.,2 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",45%,999 hPa,k.A.
-11. Mär,18:00,13 °C,Erfrischend kühl.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",48%,999 hPa,k.A.
-11. Mär,19:00,12 °C,Bedeckt.,7 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",62%,1000 hPa,30 km
-11. Mär,20:00,10 °C,Kühl.,11 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",74%,1001 hPa,k.A.
-11. Mär,21:00,10 °C,Kühl.,7 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",70%,1001 hPa,k.A.
-11. Mär,22:00,7 °C,Vorüberziehende Wolken.,6 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",78%,1001 hPa,25 km
-11. Mär,23:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 210° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",80%,1001 hPa,k.A.
-10. Mär,00:00,3 °C,Frisch.,7 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",83%,1002 hPa,k.A.
-10. Mär,01:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",79%,1001 hPa,k.A.
-10. Mär,02:00,3 °C,Frisch.,2 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",85%,1001 hPa,k.A.
-10. Mär,03:00,3 °C,Frisch.,6 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",82%,1000 hPa,k.A.
-10. Mär,04:00,3 °C,Frisch.,9 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",85%,999 hPa,k.A.
-10. Mär,05:00,4 °C,Frisch.,7 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",81%,999 hPa,k.A.
-10. Mär,06:00,5 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",77%,1000 hPa,k.A.
-10. Mär,07:00,8 °C,Leichter Regen. Bedeckt.,6 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",67%,1001 hPa,14 km
-10. Mär,08:00,9 °C,Kühl.,7 km/h,"Der Wind kommt aus 210° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",69%,1002 hPa,k.A.
-10. Mär,09:00,10 °C,Kühl.,13 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",70%,1002 hPa,k.A.
-10. Mär,10:00,10 °C,Bedeckt.,15 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",74%,1003 hPa,17 km
-10. Mär,11:00,10 °C,Kühl.,17 km/h,"Der Wind kommt aus 240° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",74%,1004 hPa,k.A.
-10. Mär,12:00,10 °C,Kühl.,13 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",80%,1005 hPa,k.A.
-10. Mär,13:00,10 °C,Leichter Regen. Bedeckt.,11 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",79%,1005 hPa,18 km
-10. Mär,14:00,11 °C,Kühl.,6 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",70%,1004 hPa,k.A.
-10. Mär,15:00,13 °C,Kühl.,4 km/h,"Der Wind kommt aus 220° (Südwest), die Luft bewegt sich also in Richtung Nordost.",60%,1004 hPa,k.A.
-10. Mär,16:00,14 °C,Teilweise sonnig.,6 km/h,"Der Wind kommt aus 210° (Südsüdwest), die Luft bewegt sich also in Richtung Nordnordost.",55%,1003 hPa,30 km
-10. Mär,17:00,13 °C,Erfrischend kühl.,7 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",57%,1003 hPa,k.A.
-10. Mär,18:00,11 °C,Kühl.,7 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",64%,1004 hPa,k.A.
-10. Mär,19:00,10 °C,Vorüberziehende Wolken.,6 km/h,"Der Wind kommt aus 0° (Nord), die Luft bewegt sich also in Richtung Süd.",69%,1005 hPa,45 km
-10. Mär,20:00,8 °C,Kühl.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",75%,1005 hPa,k.A.
-10. Mär,21:00,5 °C,Recht kühl.,Windstill,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",87%,1006 hPa,k.A.
-10. Mär,22:00,4 °C,Vorüberziehende Wolken.,4 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",93%,1007 hPa,30 km
-9. Mär,00:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",71%,1010 hPa,k.A.
-9. Mär,01:00,1 °C,Frisch.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",83%,1010 hPa,k.A.
-9. Mär,02:00,1 °C,Frisch.,2 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",80%,1010 hPa,k.A.
-9. Mär,03:00,2 °C,Frisch.,2 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",81%,1009 hPa,k.A.
-9. Mär,04:00,2 °C,Frisch.,4 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",79%,1009 hPa,k.A.
-9. Mär,05:00,1 °C,Frisch.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",85%,1009 hPa,k.A.
-9. Mär,06:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",87%,1009 hPa,k.A.
-9. Mär,07:00,-1 °C,Vorüberziehende Wolken.,6 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",91%,1008 hPa,17 km
-9. Mär,08:00,1 °C,Frisch.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",88%,1008 hPa,k.A.
-9. Mär,09:00,6 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",74%,1007 hPa,k.A.
-9. Mär,10:00,10 °C,Vorüberziehende Wolken.,9 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",57%,1006 hPa,18 km
-9. Mär,11:00,14 °C,Erfrischend kühl.,9 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",45%,1004 hPa,k.A.
-9. Mär,13:00,17 °C,Heiter.,13 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",31%,1002 hPa,15 km
-9. Mär,15:00,18 °C,Mild.,13 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",29%,1001 hPa,k.A.
-9. Mär,16:00,18 °C,Teilweise sonnig.,7 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",29%,1000 hPa,22 km
-9. Mär,17:00,18 °C,Mild.,7 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",30%,1000 hPa,k.A.
-9. Mär,18:00,16 °C,Erfrischend kühl.,15 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",32%,1000 hPa,k.A.
-9. Mär,19:00,12 °C,Vorüberziehende Wolken.,7 km/h,"Der Wind kommt aus 80° (Ost), die Luft bewegt sich also in Richtung West.",47%,1001 hPa,27 km
-9. Mär,20:00,11 °C,Kühl.,4 km/h,"Der Wind kommt aus 180° (Süd), die Luft bewegt sich also in Richtung Nord.",50%,1001 hPa,k.A.
-9. Mär,21:00,9 °C,Kühl.,13 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",56%,1001 hPa,k.A.
-9. Mär,22:00,5 °C,Bedeckt.,6 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",72%,1002 hPa,20 km
-9. Mär,23:00,6 °C,Recht kühl.,6 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",68%,1002 hPa,k.A.
-8. Mär,00:00,3 °C,Frisch.,2 km/h,"Der Wind kommt aus 160° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",71%,1018 hPa,k.A.
-8. Mär,01:00,1 °C,Frisch.,4 km/h,"Der Wind kommt aus 100° (Ost), die Luft bewegt sich also in Richtung West.",87%,1018 hPa,k.A.
-8. Mär,02:00,1 °C,Frisch.,4 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",82%,1018 hPa,k.A.
-8. Mär,03:00,-1 °C,Frisch.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",90%,1018 hPa,k.A.
-8. Mär,04:00,-1 °C,Frisch.,2 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",89%,1018 hPa,k.A.
-8. Mär,05:00,-1 °C,Frisch.,2 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",91%,1018 hPa,k.A.
-8. Mär,06:00,-2 °C,Frisch.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",90%,1018 hPa,k.A.
-8. Mär,07:00,-3 °C,Vorüberziehende Wolken.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",94%,1018 hPa,17 km
-8. Mär,08:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",94%,1018 hPa,k.A.
-8. Mär,09:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",82%,1017 hPa,k.A.
-8. Mär,10:00,7 °C,Vorüberziehende Wolken.,4 km/h,"Der Wind kommt aus 300° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",63%,1016 hPa,20 km
-8. Mär,11:00,10 °C,Kühl.,7 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",55%,1015 hPa,k.A.
-8. Mär,12:00,13 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",40%,1014 hPa,k.A.
-8. Mär,13:00,15 °C,Vorüberziehende Wolken.,6 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",33%,1012 hPa,25 km
-8. Mär,14:00,17 °C,Mild.,9 km/h,"Der Wind kommt aus 20° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",26%,1011 hPa,k.A.
-8. Mär,15:00,17 °C,Mild.,7 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",25%,1010 hPa,k.A.
-8. Mär,16:00,17 °C,Sonnig.,7 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",25%,1009 hPa,25 km
-8. Mär,17:00,16 °C,Erfrischend kühl.,15 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",27%,1009 hPa,k.A.
-8. Mär,18:00,14 °C,Erfrischend kühl.,11 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",31%,1009 hPa,k.A.
-8. Mär,19:00,10 °C,Vorüberziehende Wolken.,6 km/h,"Der Wind kommt aus 190° (Süd), die Luft bewegt sich also in Richtung Nord.",42%,1010 hPa,25 km
-8. Mär,20:00,8 °C,Kühl.,6 km/h,"Der Wind kommt aus 250° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",49%,1010 hPa,k.A.
-8. Mär,21:00,6 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 270° (West), die Luft bewegt sich also in Richtung Ost.",59%,1010 hPa,k.A.
-7. Mär,00:00,2 °C,Frisch.,4 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",81%,1022 hPa,k.A.
-7. Mär,01:00,2 °C,Frisch.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",84%,1022 hPa,k.A.
-7. Mär,02:00,0 °C,Frisch.,4 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",92%,1023 hPa,k.A.
-7. Mär,03:00,0 °C,Frisch.,6 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",89%,1023 hPa,k.A.
-7. Mär,04:00,-2 °C,Frisch.,6 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",92%,1023 hPa,k.A.
-7. Mär,05:00,-2 °C,Frisch.,6 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",95%,1024 hPa,k.A.
-7. Mär,06:00,-2 °C,Frisch.,4 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",95%,1023 hPa,k.A.
-7. Mär,07:00,-1 °C,Sonnig.,4 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",92%,1023 hPa,15 km
-7. Mär,08:00,0 °C,Frisch.,Windstill,"Der Wind kommt aus 190° (Süd), die Luft bewegt sich also in Richtung Nord.",94%,1023 hPa,k.A.
-7. Mär,09:00,4 °C,Frisch.,2 km/h,"Der Wind kommt aus 240° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",82%,1022 hPa,k.A.
-7. Mär,10:00,7 °C,Sonnig.,2 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",72%,1022 hPa,15 km
-7. Mär,11:00,10 °C,Kühl.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",57%,1020 hPa,k.A.
-7. Mär,13:00,15 °C,Vorüberziehende Wolken.,4 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",34%,1018 hPa,18 km
-7. Mär,14:00,15 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 290° (Westnordwest), die Luft bewegt sich also in Richtung Ostsüdost.",35%,1017 hPa,k.A.
-7. Mär,15:00,16 °C,Erfrischend kühl.,11 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",25%,1016 hPa,k.A.
-7. Mär,16:00,16 °C,Vorüberziehende Wolken.,7 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",26%,1016 hPa,25 km
-7. Mär,17:00,15 °C,Erfrischend kühl.,9 km/h,"Der Wind kommt aus 50° (Nordost), die Luft bewegt sich also in Richtung Südwest.",27%,1015 hPa,k.A.
-7. Mär,18:00,14 °C,Erfrischend kühl.,6 km/h,"Der Wind kommt aus 80° (Ost), die Luft bewegt sich also in Richtung West.",29%,1016 hPa,k.A.
-7. Mär,19:00,9 °C,Vorüberziehende Wolken.,2 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",42%,1017 hPa,25 km
-7. Mär,20:00,8 °C,Kühl.,2 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",52%,1017 hPa,k.A.
-7. Mär,21:00,3 °C,Frisch.,2 km/h,"Der Wind kommt aus 240° (Westsüdwest), die Luft bewegt sich also in Richtung Ostnordost.",71%,1018 hPa,k.A.
-7. Mär,22:00,5 °C,Vorüberziehende Wolken.,6 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",61%,1018 hPa,25 km
-7. Mär,23:00,3 °C,Frisch.,2 km/h,"Der Wind kommt aus 30° (Nordnordost), die Luft bewegt sich also in Richtung Südsüdwest.",67%,1018 hPa,k.A.
-6. Mär,00:00,2 °C,Frisch.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",88%,1026 hPa,k.A.
-6. Mär,01:00,0 °C,Frisch.,Windstill,"Der Wind kommt aus 100° (Ost), die Luft bewegt sich also in Richtung West.",91%,1026 hPa,k.A.
-6. Mär,02:00,0 °C,Frisch.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",93%,1026 hPa,k.A.
-6. Mär,03:00,0 °C,Frisch.,6 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",95%,1026 hPa,k.A.
-6. Mär,04:00,-2 °C,Frisch.,2 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",97%,1026 hPa,k.A.
-6. Mär,05:00,-2 °C,Frisch.,2 km/h,"Der Wind kommt aus 100° (Ost), die Luft bewegt sich also in Richtung West.",98%,1026 hPa,k.A.
-6. Mär,06:00,-2 °C,Frisch.,2 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",99%,1026 hPa,k.A.
-6. Mär,07:00,-2 °C,Nebel.,6 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",100%,1026 hPa,20 km
-6. Mär,08:00,0 °C,Frisch.,2 km/h,"Der Wind kommt aus 110° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",93%,1026 hPa,k.A.
-6. Mär,09:00,3 °C,Frisch.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",84%,1026 hPa,k.A.
-6. Mär,10:00,6 °C,Sonnig.,2 km/h,"Der Wind kommt aus 90° (Ost), die Luft bewegt sich also in Richtung West.",74%,1025 hPa,15 km
-6. Mär,11:00,10 °C,Kühl.,2 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",57%,1024 hPa,k.A.
-6. Mär,13:00,14 °C,Sonnig.,4 km/h,"Der Wind kommt aus 350° (Nord), die Luft bewegt sich also in Richtung Süd.",42%,1022 hPa,20 km
-6. Mär,15:00,16 °C,Erfrischend kühl.,4 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",32%,1020 hPa,k.A.
-6. Mär,16:00,16 °C,Vorüberziehende Wolken.,4 km/h,"Der Wind kommt aus 260° (West), die Luft bewegt sich also in Richtung Ost.",29%,1019 hPa,20 km
-6. Mär,17:00,15 °C,Erfrischend kühl.,4 km/h,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",34%,1019 hPa,k.A.
-6. Mär,18:00,15 °C,Erfrischend kühl.,9 km/h,"Der Wind kommt aus 80° (Ost), die Luft bewegt sich also in Richtung West.",34%,1019 hPa,k.A.
-6. Mär,19:00,12 °C,Vorüberziehende Wolken.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",43%,1020 hPa,20 km
-6. Mär,20:00,10 °C,Kühl.,2 km/h,"Der Wind kommt aus 40° (Nordost), die Luft bewegt sich also in Richtung Südwest.",51%,1020 hPa,k.A.
-6. Mär,21:00,7 °C,Kühl.,2 km/h,"Der Wind kommt aus 10° (Nord), die Luft bewegt sich also in Richtung Süd.",60%,1021 hPa,k.A.
-6. Mär,22:00,4 °C,Vorüberziehende Wolken.,4 km/h,"Der Wind kommt aus 330° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",74%,1022 hPa,15 km
-6. Mär,23:00,4 °C,Frisch.,4 km/h,"Der Wind kommt aus 140° (Südost), die Luft bewegt sich also in Richtung Nordwest.",76%,1022 hPa,k.A.
-5. Mär,17:00,15 °C,Erfrischend kühl.,4 km/h,"Der Wind kommt aus 60° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",26%,1023 hPa,k.A.
-5. Mär,18:00,14 °C,Erfrischend kühl.,2 km/h,"Der Wind kommt aus 70° (Ostnordost), die Luft bewegt sich also in Richtung Westsüdwest.",31%,1023 hPa,k.A.
-5. Mär,19:00,10 °C,Heiter.,Windstill,"Der Wind kommt aus 310° (Nordwest), die Luft bewegt sich also in Richtung Südost.",41%,1024 hPa,17 km
-5. Mär,20:00,7 °C,Recht kühl.,2 km/h,"Der Wind kommt aus 150° (Südsüdost), die Luft bewegt sich also in Richtung Nordnordwest.",58%,1024 hPa,k.A.
-5. Mär,21:00,4 °C,Frisch.,2 km/h,"Der Wind kommt aus 190° (Süd), die Luft bewegt sich also in Richtung Nord.",70%,1025 hPa,k.A.
-5. Mär,22:00,4 °C,Heiter.,Windstill,"Der Wind kommt aus 100° (Ost), die Luft bewegt sich also in Richtung West.",73%,1026 hPa,15 km
-5. Mär,23:00,3 °C,Frisch.,2 km/h,"Der Wind kommt aus 340° (Nordnordwest), die Luft bewegt sich also in Richtung Südsüdost.",78%,1026 hPa,k.A.
+20. Mär,19:00,13 °C,Bedeckt.,4 km/h,"Der Wind kommt aus 320° (Nordwest), die Luft bewegt sich also in Richtung Südost.",47%,1021 hPa,35 km
+20. Mär,20:00,12 °C,Kühl.,4 km/h,"Der Wind kommt aus 280° (West), die Luft bewegt sich also in Richtung Ost.",52%,1022 hPa,k.A.
+20. Mär,21:00,7 °C,Recht kühl.,4 km/h,"Der Wind kommt aus 130° (Südost), die Luft bewegt sich also in Richtung Nordwest.",73%,1023 hPa,k.A.
+20. Mär,22:00,9 °C,Kühl.,7 km/h,"Der Wind kommt aus 120° (Ostsüdost), die Luft bewegt sich also in Richtung Westnordwest.",66%,1023 hPa,k.A.
+20. Mär,23:00,7 °C,Kühl.,6 km/h,"Der Wind kommt aus 170° (Süd), die Luft bewegt sich also in Richtung Nord.",70%,1023 hPa,k.A.

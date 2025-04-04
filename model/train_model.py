@@ -1,5 +1,4 @@
 import pandas as pd
-import sqlite3
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
@@ -8,14 +7,22 @@ import pickle
 import os
 import argparse
 from datetime import datetime, timedelta
+from pymongo import MongoClient
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description='Train and predict weather for a specified day.')
 parser.add_argument('--days-ahead', type=int, default=1, help='Number of days ahead to predict (default: 1)')
 args = parser.parse_args()
 
-# Path to the SQLite database
-DATABASE_PATH = 'weather.db'  # Relative to the root directory (wetter_predictor/)
+# MongoDB connection (use environment variable for the full URI)
+MONGODB_URI = os.getenv('MONGODB_URI')
+if not MONGODB_URI:
+    raise ValueError("MONGODB_URI environment variable not set")
+
+client = MongoClient(MONGODB_URI)
+db = client['weather_db']
+collection = db['weather_history']
+
 # Path to the weather_history.csv file
 WEATHER_CSV_PATH = os.path.join('scrapy_project', 'data', 'weather_history.csv')
 # Path to the models directory
@@ -26,31 +33,8 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 TEMP_MODEL_PATH = os.path.join(MODELS_DIR, 'temp_model.pkl')
 PREDICTION_PATH = os.path.join(MODELS_DIR, 'predictions.pkl')
 
-def init_db():
-    """Initialize the SQLite database and create the weather_history table."""
-    conn = sqlite3.connect(DATABASE_PATH)
-    cursor = conn.cursor()
-
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS weather_history (
-            Date TEXT,
-            Time TEXT,
-            Temperature TEXT,
-            Weather TEXT,
-            Wind_Speed TEXT,
-            Wind_Direction TEXT,
-            Humidity TEXT,
-            Barometer TEXT,
-            Visibility TEXT,
-            Day TEXT
-        )
-    ''')
-
-    conn.commit()
-    conn.close()
-
 def load_csv_to_db():
-    """Read the CSV file, process the data, and load it into the SQLite database."""
+    """Read the CSV file, process the data, and load it into MongoDB."""
     if not os.path.exists(WEATHER_CSV_PATH):
         print(f"Error: {os.path.abspath(WEATHER_CSV_PATH)} not found. Please run the Scrapy spider to generate the file.")
         return False
@@ -64,7 +48,10 @@ def load_csv_to_db():
 
     # Process the Date column to add the Day column
     def extract_day(date_str):
-        month_map = {'Mär': '03'}
+        month_map = {
+            'Jan': '01', 'Feb': '02', 'Mär': '03', 'Apr': '04', 'Mai': '05', 'Jun': '06',
+            'Jul': '07', 'Aug': '08', 'Sep': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
+        }
         day, month = date_str.split('. ')
         day = day.strip()
         month = month_map[month.strip()]
@@ -74,58 +61,30 @@ def load_csv_to_db():
 
     df['Day'] = df['Date'].apply(extract_day)
 
-    conn = sqlite3.connect(DATABASE_PATH)
-    cursor = conn.cursor()
+    # Convert DataFrame to list of dictionaries for MongoDB
+    records = df.to_dict('records')
 
-    # Only delete the table contents if we're sure we can load new data
-    cursor.execute("SELECT COUNT(*) FROM weather_history")
-    count = cursor.fetchone()[0]
-    if count > 0:
-        print("Table 'weather_history' already has data. Skipping CSV load.")
-        conn.close()
+    # Check if the collection already has data
+    if collection.count_documents({}) > 0:
+        print("Collection 'weather_history' already has data. Skipping CSV load.")
         return True
 
-    cursor.execute("DELETE FROM weather_history")
-
-    for _, row in df.iterrows():
-        cursor.execute('''
-            INSERT INTO weather_history (Date, Time, Temperature, Weather, Wind_Speed, Wind_Direction, Humidity, Barometer, Visibility, Day)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ''', (
-            row['Date'], row['Time'], row['Temperature'], row['Weather'], row['Wind_Speed'],
-            row['Wind_Direction'], row['Humidity'], row['Barometer'], row['Visibility'], row['Day']
-        ))
-
-    conn.commit()
-    conn.close()
-    print("Data successfully loaded into SQLite database.")
+    # Insert data into MongoDB
+    collection.insert_many(records)
+    print("Data successfully loaded into MongoDB.")
     return True
 
 def load_data():
-    """Load data from the SQLite database."""
-    # Initialize the database and load the CSV data if the table doesn't exist
-    init_db()
-    conn = sqlite3.connect(DATABASE_PATH)
-    cursor = conn.cursor()
-
-    # Check if the table exists and has data
-    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='weather_history'")
-    if not cursor.fetchone():
-        print("Table 'weather_history' does not exist. Loading data from CSV...")
+    """Load data from MongoDB."""
+    # Load the CSV data if the collection doesn't exist or is empty
+    if collection.count_documents({}) == 0:
+        print("Collection 'weather_history' is empty. Loading data from CSV...")
         if not load_csv_to_db():
             raise Exception("Failed to load data from CSV into the database: CSV file not found or invalid.")
 
-    # Check if the table has data
-    cursor.execute("SELECT COUNT(*) FROM weather_history")
-    count = cursor.fetchone()[0]
-    if count == 0:
-        print("Table 'weather_history' is empty. Loading data from CSV...")
-        if not load_csv_to_db():
-            raise Exception("Failed to load data from CSV into the database: CSV file not found or invalid.")
-
-    query = "SELECT * FROM weather_history ORDER BY Date, Time"
-    df = pd.read_sql_query(query, conn)
-    conn.close()
+    # Fetch all data from MongoDB and convert to DataFrame
+    data = list(collection.find().sort([('Date', 1), ('Time', 1)]))
+    df = pd.DataFrame(data)
     return df
 
 def preprocess_data(df):
@@ -156,7 +115,10 @@ def preprocess_data(df):
 
     # Convert Date to datetime and extract features
     def parse_date(date_str):
-        month_map = {'Mär': '03'}
+        month_map = {
+            'Jan': '01', 'Feb': '02', 'Mär': '03', 'Apr': '04', 'Mai': '05', 'Jun': '06',
+            'Jul': '07', 'Aug': '08', 'Sep': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
+        }
         day, month = date_str.split('. ')
         day = day.strip()
         month = month_map[month.strip()]
