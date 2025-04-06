@@ -1,5 +1,5 @@
 name: Wetter Predictor (Build, Deploy)
-# Requires GitHub Action Secrets: AZURE_WEBAPP_NAME, AZURE_WEBAPP_PUBLISH_PROFILE
+# Requires GitHub Action Secrets: AZURE_WEBAPP_NAME, AZURE_WEBAPP_PUBLISH_PROFILE, MONGODB_URI
 # Requires Azure Env Variable: AZURE_STORAGE_CONNECTION_STRING, MONGODB_URI
 
 on:
