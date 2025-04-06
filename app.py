@@ -29,7 +29,7 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 PREDICTION_PATH = os.path.join(MODELS_DIR, 'predictions.pkl')
 
 def load_csv_to_db():
-    """Read the CSV file, process the data, and load it into MongoDB."""
+    """Read the CSV file, process the data, and load it into MongoDB without duplicates."""
     if not os.path.exists(WEATHER_CSV_PATH):
         app.logger.error(f"weather_history.csv not found at {os.path.abspath(WEATHER_CSV_PATH)}. Please run the Scrapy spider to generate the file.")
         return False
@@ -40,6 +40,10 @@ def load_csv_to_db():
     except Exception as e:
         app.logger.error(f"Error reading weather_history.csv: {str(e)}")
         return False
+
+    # Remove duplicates from the DataFrame based on Date and Time
+    df = df.drop_duplicates(subset=['Date', 'Time'], keep='last')
+    app.logger.info(f"After removing duplicates, number of rows: {len(df)}")
 
     # Process the Date column to add the Day column
     def extract_day(date_str):
@@ -58,6 +62,10 @@ def load_csv_to_db():
 
     # Convert DataFrame to list of dictionaries for MongoDB
     records = df.to_dict('records')
+
+    # Clear the collection to avoid duplicates
+    collection.delete_many({})
+    app.logger.info("Cleared existing data in 'weather_history' collection.")
 
     # Insert data into MongoDB
     collection.insert_many(records)
