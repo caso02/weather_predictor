@@ -59,11 +59,6 @@ def load_csv_to_db():
     # Convert DataFrame to list of dictionaries for MongoDB
     records = df.to_dict('records')
 
-    # Check if the collection already has data
-    if collection.count_documents({}) > 0:
-        app.logger.info("Collection 'weather_history' already has data. Skipping CSV load.")
-        return True
-
     # Insert data into MongoDB
     collection.insert_many(records)
     app.logger.info("Data successfully loaded into MongoDB.")
@@ -114,10 +109,10 @@ def index():
                 with open(PREDICTION_PATH, 'rb') as f:
                     predictions = pickle.load(f)
                 app.logger.info(f"Prediction loaded: {predictions}")
-                # Find the prediction for the selected days_ahead
+                # Find the newest prediction for the selected days_ahead (last match in the list)
                 if days_ahead:
                     days_ahead = int(days_ahead)
-                    for pred in predictions:
+                    for pred in reversed(predictions):  # Iterate in reverse to get the newest prediction
                         if pred['days_ahead'] == days_ahead:
                             prediction = pred
                             break
