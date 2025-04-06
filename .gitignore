@@ -8,8 +8,8 @@ __pycache__/
 *.pyd
 
 # Scrapy output and temporary files
-scrapy_project/data/BTC_history.csv
 scrapy_project/response.html
+scrapy_project/data/*
 *.log
 
 # macOS system files
