@@ -5,6 +5,7 @@ import subprocess
 from datetime import datetime
 import pickle
 from pymongo import MongoClient
+import sys
 
 # Initialize Flask app with the correct template folder
 app = Flask(__name__, template_folder='frontend')
@@ -159,5 +160,9 @@ def predict():
         app.logger.error(f"Error during prediction: {str(e)}")
         return f"Error during prediction: {str(e)}", 500
 
+# Allow running load_csv_to_db() directly from the command line
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    if len(sys.argv) > 1 and sys.argv[1] == 'load_csv_to_db':
+        load_csv_to_db()
+    else:
+        app.run(debug=True, port=5000)

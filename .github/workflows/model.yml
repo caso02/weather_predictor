@@ -28,7 +28,20 @@ jobs:
       - name: Install Python packages
         run: pip install -r requirements.txt
 
-      # Run train_model.py to train the model and generate predictions
+      # Run the Scrapy spider to scrape weather data
+      - name: Run Scrapy spider to scrape weather data
+        run: |
+          cd scrapy_project
+          scrapy crawl weather_spider
+          cd ..
+
+      # Load the scraped data into MongoDB
+      - name: Load scraped data into MongoDB
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        run: python app.py load_csv_to_db
+
+      # Train the model and generate predictions
       - name: Train the model and predict
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
