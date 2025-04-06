@@ -50,13 +50,13 @@
                         </div>
                         <div class="col-auto">
                             <select id="days-ahead" name="days_ahead" class="form-select">
-                                <option value="1">1 Day Ahead</option>
-                                <option value="2">2 Days Ahead</option>
-                                <option value="3">3 Days Ahead</option>
-                                <option value="4">4 Days Ahead</option>
-                                <option value="5">5 Days Ahead</option>
-                                <option value="6">6 Days Ahead</option>
-                                <option value="7">7 Days Ahead</option>
+                                <option value="1" {% if days_ahead == '1' %}selected{% endif %}>1 Day Ahead</option>
+                                <option value="2" {% if days_ahead == '2' %}selected{% endif %}>2 Days Ahead</option>
+                                <option value="3" {% if days_ahead == '3' %}selected{% endif %}>3 Days Ahead</option>
+                                <option value="4" {% if days_ahead == '4' %}selected{% endif %}>4 Days Ahead</option>
+                                <option value="5" {% if days_ahead == '5' %}selected{% endif %}>5 Days Ahead</option>
+                                <option value="6" {% if days_ahead == '6' %}selected{% endif %}>6 Days Ahead</option>
+                                <option value="7" {% if days_ahead == '7' %}selected{% endif %}>7 Days Ahead</option>
                             </select>
                         </div>
                         <div class="col-auto">
@@ -66,7 +66,7 @@
                 </form>
 
                 <!-- Display prediction results if available -->
-                {% if prediction %}
+                {% if prediction and prediction.avg_temperature is defined %}
                 <h5>Prediction for {{ prediction.date }}</h5>
                 <p><strong>Average Temperature:</strong> {{ prediction.avg_temperature|round(1) }} °C</p>
                 {% else %}

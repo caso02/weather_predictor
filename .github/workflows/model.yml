@@ -2,12 +2,7 @@ name: Wetter Predictor (Update Model)
 # Requires GitHub Action Secrets: AZURE_STORAGE_CONNECTION_STRING, MONGODB_URI
 
 on:
-  workflow_dispatch:
-    inputs:
-      days_ahead:
-        description: 'Number of days ahead to predict'
-        required: true
-        default: '1'
+  workflow_dispatch:  # Trigger manuell ohne Eingabe
 
 jobs:
   model:
@@ -41,11 +36,15 @@ jobs:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
         run: python app.py load_csv_to_db
 
-      # Train the model and generate predictions
-      - name: Train the model and predict
+      # Train the model and generate predictions for days 1 to 7
+      - name: Train the model and predict for days 1 to 7
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
-        run: python model/train_model.py --days-ahead ${{ github.event.inputs.days_ahead }}
+        run: |
+          for day in {1..7}
+          do
+            python model/train_model.py --days-ahead $day
+          done
 
       # Upload models and predictions to Azure Blob Storage
       - name: Upload to Azure Blob Storage

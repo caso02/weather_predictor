@@ -108,15 +108,23 @@ def index():
 
         # Load prediction results if available
         prediction = None
+        days_ahead = request.args.get('days_ahead', None)  # Get days_ahead from query parameter
         if os.path.exists(PREDICTION_PATH):
             try:
                 with open(PREDICTION_PATH, 'rb') as f:
-                    prediction = pickle.load(f)
-                app.logger.info(f"Prediction loaded: {prediction}")
+                    predictions = pickle.load(f)
+                app.logger.info(f"Prediction loaded: {predictions}")
+                # Find the prediction for the selected days_ahead
+                if days_ahead:
+                    days_ahead = int(days_ahead)
+                    for pred in predictions:
+                        if pred['days_ahead'] == days_ahead:
+                            prediction = pred
+                            break
             except Exception as e:
                 app.logger.error(f"Error loading prediction: {str(e)}")
 
-        return render_template('index.html', data=data, unique_dates=unique_dates, selected_date=selected_date, prediction=prediction)
+        return render_template('index.html', data=data, unique_dates=unique_dates, selected_date=selected_date, prediction=prediction, days_ahead=days_ahead)
 
     except Exception as e:
         app.logger.error(f"Error accessing MongoDB: {str(e)}")
@@ -139,22 +147,9 @@ def predict():
             app.logger.error(f"Error running train_model.py: {result.stderr}")
             return f"Error running prediction script: {result.stderr}", 500
 
-        # Load the prediction result
-        if os.path.exists(PREDICTION_PATH):
-            try:
-                with open(PREDICTION_PATH, 'rb') as f:
-                    prediction = pickle.load(f)
-                app.logger.info(f"Prediction loaded: {prediction}")
-            except Exception as e:
-                app.logger.error(f"Error loading prediction: {str(e)}")
-                return f"Error loading prediction: {str(e)}", 500
-        else:
-            app.logger.error("Prediction file not found after running train_model.py.")
-            return "Prediction file not found after running train_model.py.", 500
-
-        # Redirect back to the index page with the selected date (if any)
+        # Redirect back to the index page with the selected date and days_ahead
         selected_date = request.args.get('date', '')
-        return redirect(url_for('index', date=selected_date))
+        return redirect(url_for('index', date=selected_date, days_ahead=days_ahead))
 
     except Exception as e:
         app.logger.error(f"Error during prediction: {str(e)}")

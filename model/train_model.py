@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description='Train and predict weather for a sp
 parser.add_argument('--days-ahead', type=int, default=1, help='Number of days ahead to predict (default: 1)')
 args = parser.parse_args()
 
-# MongoDB connection (use environment variable for the full URI)
+# MongoDB connection (use environment variable for security in production)
 MONGODB_URI = os.getenv('MONGODB_URI')
 if not MONGODB_URI:
     raise ValueError("MONGODB_URI environment variable not set")
@@ -119,10 +119,15 @@ def preprocess_data(df):
             'Jan': '01', 'Feb': '02', 'Mär': '03', 'Apr': '04', 'Mai': '05', 'Jun': '06',
             'Jul': '07', 'Aug': '08', 'Sep': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
         }
-        day, month = date_str.split('. ')
-        day = day.strip()
-        month = month_map[month.strip()]
-        return pd.to_datetime(f"2025-{month}-{day.zfill(2)}", format="%Y-%m-%d")
+        try:
+            day, month = date_str.split('. ')
+            day = day.strip()
+            month = month_map[month.strip()]
+            return pd.to_datetime(f"2025-{month}-{day.zfill(2)}", format="%Y-%m-%d")
+        except KeyError as e:
+            raise ValueError(f"Invalid month in date string '{date_str}': {str(e)}")
+        except Exception as e:
+            raise ValueError(f"Error parsing date '{date_str}': {str(e)}")
 
     df['Datetime'] = df['Date'].apply(parse_date)
     df['Day_of_Month'] = df['Datetime'].dt.day
@@ -157,13 +162,49 @@ def predict_next_day(df, model, days_ahead):
     # Features for prediction
     features = ['Wind_Speed', 'Wind_Direction_Degrees', 'Humidity', 'Barometer', 'Visibility', 'Hour', 'Day_of_Week', 'Day_of_Month']
 
-    # Get the most recent day's data (March 20, 2025)
-    last_day = df[df['Date'] == '20. Mär'].copy()
+    # Debug: Print all dates in the dataset
+    print("All dates in dataset:", sorted(df['Date'].unique()))
 
-    # Calculate the target date (March 20 + days_ahead)
-    base_date = datetime(2025, 3, 20)
+    # Dynamically determine the most recent date in the dataset
+    def parse_date(date_str):
+        month_map = {
+            'Jan': '01', 'Feb': '02', 'Mär': '03', 'Apr': '04', 'Mai': '05', 'Jun': '06',
+            'Jul': '07', 'Aug': '08', 'Sep': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
+        }
+        try:
+            day, month = date_str.split('. ')
+            day = day.strip()
+            month = month_map[month.strip()]
+            return datetime.strptime(f"2025-{month}-{day.zfill(2)}", "%Y-%m-%d")
+        except KeyError as e:
+            raise ValueError(f"Invalid month in date string '{date_str}': {str(e)}")
+        except Exception as e:
+            raise ValueError(f"Error parsing date '{date_str}': {str(e)}")
+
+    # Convert all dates to datetime objects and find the most recent one
+    df['parsed_date'] = df['Date'].apply(parse_date)
+    most_recent_date = df['parsed_date'].max()
+    most_recent_day = most_recent_date.day  # Get the day without leading zero
+    most_recent_month = most_recent_date.strftime("%b").replace("Mär", "Mär")  # Keep month format consistent
+    most_recent_date_str = f"{most_recent_day}. {most_recent_month}"  # Format: "6. Apr"
+
+    print(f"Most recent date: {most_recent_date_str}")
+
+    # Get the most recent day's data
+    last_day = df[df['Date'] == most_recent_date_str].copy()
+
+    # Debug: Print the filtered data
+    print(f"Data for most recent date ({most_recent_date_str}):")
+    print(last_day)
+
+    # Check if last_day is empty
+    if last_day.empty:
+        raise ValueError(f"No data found for the most recent date '{most_recent_date_str}' in the dataset.")
+
+    # Calculate the target date (most recent date + days_ahead)
+    base_date = most_recent_date
     target_date = base_date + timedelta(days=days_ahead)
-    target_date_str = target_date.strftime("%B %d, %Y")  # e.g., "March 21, 2025"
+    target_date_str = target_date.strftime("%B %d, %Y")  # e.g., "April 07, 2025"
 
     # Prepare data for the target date
     prediction_data = last_day[features].copy()
@@ -177,13 +218,30 @@ def predict_next_day(df, model, days_ahead):
     avg_temp = np.mean(temp_pred)
     print(f"Predicted average temperature for {target_date_str}: {avg_temp:.1f} °C")
 
-    # Save the prediction
+    # Load existing predictions if they exist, otherwise start with an empty list
+    predictions = []
+    if os.path.exists(PREDICTION_PATH):
+        try:
+            with open(PREDICTION_PATH, 'rb') as f:
+                predictions = pickle.load(f)
+        except Exception as e:
+            print(f"Error loading existing predictions: {str(e)}")
+
+    # Ensure predictions is a list
+    if not isinstance(predictions, list):
+        predictions = []
+
+    # Add the new prediction to the list
     prediction = {
         'avg_temperature': avg_temp,
-        'date': target_date_str
+        'date': target_date_str,
+        'days_ahead': days_ahead
     }
+    predictions.append(prediction)
+
+    # Save the updated list of predictions
     with open(PREDICTION_PATH, 'wb') as f:
-        pickle.dump(prediction, f)
+        pickle.dump(predictions, f)
 
     return prediction
 
